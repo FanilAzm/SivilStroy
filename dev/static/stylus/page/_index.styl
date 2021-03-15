@@ -43,7 +43,10 @@
 .js-slider__prev
 	position absolute
 	bottom 60px
+	border 1px solid #ffffff
 	z-index 5
+	svg
+		fill #ffffff
 
 .js-slider__next
 	right 13px
@@ -112,6 +115,15 @@
 		border 1px solid mainColor
 		border-radius 5px
 		background-color #fff
+		svg
+			width 10px
+			height 20px
+			fill titleColor
+		&:hover
+			background-color titleColor
+			border 1px solid titleColor
+			svg
+				fill #ffffff
 	input
 		height 30px
 		width 45px
@@ -178,20 +190,34 @@
 .services-item
 	display flex
 	flex-direction column
-	justify-content center
 	align-items flex-start
 	width 50%
+	padding-top 75px
 	padding-left 100px
 	background-color titleColor
 	color #ffffff
+	transition all ease .5s
 
 .services-item__descr
 	width 565px
 	margin-top 45px
 	margin-bottom 48px
+	transition all ease .5s
+
+.services-item__descr_full
+	display none
+	transition all ease .5s
+	p
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
 
 .services-item_img
+	max-width 764px
 	padding 0
+	img
+		width 100%
+		transition all ease .5s
 
 .services-item_white
 	padding-left 102px
@@ -357,18 +383,46 @@
 
 .licenses-items
 	position relative
-	display flex
 	background-color titleColor
 	margin-top 60px
+	padding-bottom 86px
 	padding 60px
 	border-radius 5px
+	.slick-dotted.slick-slider
+		margin-bottom 0
+		transition all ease .5s
+	.licenses-item[data-slick-index="3"],
+	.licenses-item[data-slick-index="4"]
+		opacity 0
+		transition all ease .5s
 
 .licenses-item
-	margin-right 44px
 	p
 		width 257px
 		margin-top 32px
 		color #ffffff
+	
+
+.licenses-slider
+	.slick-dots
+		opacity 0
+		bottom -60px
+		transition all ease .5s
+
+.licenses-slider__next,
+.licenses-slider__prev
+	opacity 0
+	bottom 60px
+	border 1px solid #ffffff
+	transition all ease .5s
+	svg
+		fill #ffffff
+
+.licenses-slider__next
+	right 300px
+
+.licenses-slider__prev
+	left 300px
 
 .licenses-action
 	width 690px
@@ -379,6 +433,7 @@
 	background-image url(../../static/img/content/video/license-bg.png)
 	background-repeat no-repeat
 	background-size contain
+	z-index 6
 
 .licenses-action__content
 	position absolute

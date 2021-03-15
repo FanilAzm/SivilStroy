@@ -3030,16 +3030,32 @@ button {
 .section-slider__prev {
   position: absolute;
   bottom: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 3px;
   cursor: pointer;
   z-index: 5;
 }
 .section-slider__next svg,
 .section-slider__prev svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 30px;
   background-color: transparent;
+  fill: rgba(0,0,0,0.15);
+}
+.section-slider__next:hover,
+.section-slider__prev:hover {
+  background-color: #fff;
+  border: 1px solid #000;
 }
 .section-slider__next:hover svg,
 .section-slider__prev:hover svg {
-  fill: #fff;
+  fill: #000;
 }
 .section-slider__prev {
   left: 440px;
@@ -3290,7 +3306,12 @@ button {
 .js-slider__prev {
   position: absolute;
   bottom: 60px;
+  border: 1px solid #fff;
   z-index: 5;
+}
+.js-slider__next svg,
+.js-slider__prev svg {
+  fill: #fff;
 }
 .js-slider__next {
   right: 13px;
@@ -3377,6 +3398,18 @@ button {
   border-radius: 5px;
   background-color: #fff;
 }
+.section-form__content button svg {
+  width: 10px;
+  height: 20px;
+  fill: #115b64;
+}
+.section-form__content button:hover {
+  background-color: #115b64;
+  border: 1px solid #115b64;
+}
+.section-form__content button:hover svg {
+  fill: #fff;
+}
 .section-form__content input {
   height: 30px;
   width: 45px;
@@ -3459,22 +3492,38 @@ button {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: start;
       align-items: flex-start;
   width: 50%;
+  padding-top: 75px;
   padding-left: 100px;
   background-color: #115b64;
   color: #fff;
+  transition: all ease 0.5s;
 }
 .services-item__descr {
   width: 565px;
   margin-top: 45px;
   margin-bottom: 48px;
+  transition: all ease 0.5s;
+}
+.services-item__descr_full {
+  display: none;
+  transition: all ease 0.5s;
+}
+.services-item__descr_full p {
+  margin-bottom: 20px;
+}
+.services-item__descr_full p:last-child {
+  margin-bottom: 0;
 }
 .services-item_img {
+  max-width: 764px;
   padding: 0;
+}
+.services-item_img img {
+  width: 100%;
+  transition: all ease 0.5s;
 }
 .services-item_white {
   padding-left: 102px;
@@ -3655,20 +3704,47 @@ button {
 }
 .licenses-items {
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #115b64;
   margin-top: 60px;
+  padding-bottom: 86px;
   padding: 60px;
   border-radius: 5px;
 }
-.licenses-item {
-  margin-right: 44px;
+.licenses-items .slick-dotted.slick-slider {
+  margin-bottom: 0;
+  transition: all ease 0.5s;
+}
+.licenses-items .licenses-item[data-slick-index="3"],
+.licenses-items .licenses-item[data-slick-index="4"] {
+  opacity: 0;
+  transition: all ease 0.5s;
 }
 .licenses-item p {
   width: 257px;
   margin-top: 32px;
   color: #fff;
+}
+.licenses-slider .slick-dots {
+  opacity: 0;
+  bottom: -60px;
+  transition: all ease 0.5s;
+}
+.licenses-slider__next,
+.licenses-slider__prev {
+  opacity: 0;
+  bottom: 60px;
+  border: 1px solid #fff;
+  transition: all ease 0.5s;
+}
+.licenses-slider__next svg,
+.licenses-slider__prev svg {
+  fill: #fff;
+}
+.licenses-slider__next {
+  right: 300px;
+}
+.licenses-slider__prev {
+  left: 300px;
 }
 .licenses-action {
   width: 690px;
@@ -3679,6 +3755,7 @@ button {
   background-image: url("../../static/img/content/video/license-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 6;
 }
 .licenses-action__content {
   position: absolute;
