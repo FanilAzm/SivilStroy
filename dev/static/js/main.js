@@ -3,18 +3,19 @@
 
 $(document).ready(function(){
 
-	$('.js-price__slider ').slick({
-  speed: 300,
-  slidesToShow: 3,
+	$('.js-slider').slick({
+  speed: 500,
+  slidesToShow: 1,
   slidesToScroll: 1,
+  nextArrow: '.js-slider__next',
+  prevArrow: '.js-slider__prev',
+  dots: true,
   responsive: [
     {
       breakpoint: 1240,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        nextArrow: '.price-slider__next',
-        prevArrow: '.price-slider__prev',
         infinite: true
       }
     },
@@ -30,10 +31,13 @@ $(document).ready(function(){
   ]
   });
 
-  $('.js-doing__icons').slick({
-    speed: 300,
-    slidesToShow: 5,
+  $('.solutions-slider').slick({
+    speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: '.solutions-slider__next',
+    prevArrow: '.solutions-slider__prev',
+    dots: true,
     responsive: [
       {
         breakpoint: 950,
@@ -62,10 +66,13 @@ $(document).ready(function(){
     ]
   });
 
-  $('.js-review__slider').slick({
+  $('.completed-slider').slick({
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     dots: true,
-    nextArrow: '.review-slider__next',
-    prevArrow: '.review-slider__prev',
+    nextArrow: '.completed-slider__next',
+    prevArrow: '.completed-slider__prev',
     responsive: [
       {
         breakpoint: 1150,
@@ -74,6 +81,32 @@ $(document).ready(function(){
         }
       }
     ]
+  });
+  
+  $('.clients-slider').slick({
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    nextArrow: '.clients-slider__next',
+    prevArrow: '.clients-slider__prev',
+    responsive: [
+      {
+        breakpoint: 1150,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
+  
+  $('.comments-slider').slick({
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    nextArrow: '.comments-slider__next',
+    prevArrow: '.comments-slider__prev'
   });
 
   $('.nav-mobile').click(function(){
