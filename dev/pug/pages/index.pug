@@ -78,12 +78,12 @@ block content
 				form.head-form
 					.section-form__box
 						label Уровень качества видео
-						.section-form__content.section-form__content_arrow
-							select
-								option(value="Full HD") Full HD
-								option(value="Full HD") Full HD
-								option(value="Full HD") Full HD
-								option(value="Full HD") Full HD
+						.section-form__content
+							select.select(name='video')
+								option(disabled='') Full HD
+								option(value='Full HD') Full HD
+								option(value='Full HD') Full HD
+								option(value='Full HD') Full HD
 					.section-form__box
 						label Количество камер внутри помещения
 						.section-form__content
@@ -128,12 +128,12 @@ block content
 									c4.164,4.165,4.164,10.917,0,15.083L135.685,487.544C133.685,489.551,130.967,490.68,128.133,490.68z')
 					.section-form__box
 						label Время хранения видео
-						.section-form__content.section-form__content_arrow
-							select
-								option(value="Full HD") 14 дней
-								option(value="Full HD") 14 дней
-								option(value="Full HD") 14 дней
-								option(value="Full HD") 14 дней
+						.section-form__content
+							select.select(name='date')
+								option(disabled='') 14 дней
+								option(value='14 дней') 14 дней
+								option(value='14 дней') 14 дней
+								option(value='14 дней') 14 дней
 					.section-form__info
 						.section-form__box
 							input(type="text" placeholder="Ваше имя")
@@ -588,10 +588,12 @@ block content
 				form.request-form
 					h4.h4 Выберите услугу:
 					.section-form__box
-						.section-form__content.section-form__content_arrow
-							select
-								option(value="Проектирование видеонаблюдения") Проектирование видеонаблюдения
-								option(value="Проектирование видеонаблюдения") Проектирование видеонаблюдения
+						.section-form__content
+							select.select(name='project')
+								option(disabled='') Проектирование видеонаблюдения
+								option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
+								option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
+								option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
 					.section-form__box
 						input(type="text" placeholder="Ваше имя")
 					.section-form__box
