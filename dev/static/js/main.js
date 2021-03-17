@@ -179,7 +179,11 @@ $(document).ready(function(){
 
   $('.nav-mobile').click(function(){
     $(this).toggleClass('active');
-    $('.main-nav__list').toggleClass('mobile-show');
+    $('.header-nav__tablet').toggleClass('active');
+  });
+
+  $('.btn-close').click(function(){
+    $('.header-nav__tablet').removeClass('active');
   });
 
 
