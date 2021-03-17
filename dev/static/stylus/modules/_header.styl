@@ -15,6 +15,7 @@
 	font-size 18px
 
 .header-nav
+	position relative
 	display flex
 	justify-self flex-start
 	flex 1
@@ -54,6 +55,9 @@
 			&:after
 				display block
 				sprite($s-arrow-menu)
+
+.header-nav__menu-tablet
+	display none
 		
 .header-nav__menu-item
 	position relative
@@ -115,4 +119,44 @@
 		height 3px
 		border-radius 1px
 		background-color actionColor
+
+
+.nav-mobile
+	display none
+	position absolute
+	width 45px
+	height 45px
+	top 68px
+	right 18px
+	&.active
+		.nav-mobile__line-top
+			top 0
+			transform rotate(45deg)
+			transition all linear .3s
+			
+		.nav-mobile__line-middle
+			opacity 0
+			
+		.nav-mobile__line-bottom
+			top 0
+			transform rotate(-45deg)
+			transition all linear .3s
+	
+.nav-mobile__line
+	display block
+	position absolute
+	width 45px
+	height 3px
+	margin 10px 0
+	border-radius 3px
+	background-color actionColor
+	cursor pointer
+
+.nav-mobile__line-top
+	top -17px
+	transition all linear .3s
+
+.nav-mobile__line-bottom
+	top 17px
+	transition all linear .3s
 	

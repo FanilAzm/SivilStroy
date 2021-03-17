@@ -14,7 +14,7 @@ $(document).ready(function(){
     {
       breakpoint: 1240,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true
       }
@@ -35,35 +35,17 @@ $(document).ready(function(){
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: '.solutions-slider__next',
-    prevArrow: '.solutions-slider__prev',
     dots: true,
     responsive: [
       {
-        breakpoint: 950,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: false
-        }
-      },
-      {
-        breakpoint: 650,
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: false
         }
       },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false
-        }
-      }
-    ]
+    ],
+    nextArrow: '.solutions-slider__next',
+    prevArrow: '.solutions-slider__prev',
   });
 
   $('.completed-slider').slick({
@@ -72,15 +54,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     nextArrow: '.completed-slider__next',
-    prevArrow: '.completed-slider__prev',
-    responsive: [
-      {
-        breakpoint: 1150,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
+    prevArrow: '.completed-slider__prev'
   });
   
   $('.clients-slider').slick({
@@ -89,15 +63,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     nextArrow: '.clients-slider__next',
-    prevArrow: '.clients-slider__prev',
-    responsive: [
-      {
-        breakpoint: 1150,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
+    prevArrow: '.clients-slider__prev'
   });
   
   $('.comments-slider').slick({
@@ -105,6 +71,14 @@ $(document).ready(function(){
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ],
     nextArrow: '.comments-slider__next',
     prevArrow: '.comments-slider__prev'
   });
@@ -114,6 +88,14 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ],
     nextArrow: '.licenses-slider__next',
     prevArrow: '.licenses-slider__prev'
   });

@@ -9,38 +9,274 @@
 		right 27%
 
 	.js-slider__next
-		right 0
+		right 0	!important
 	.js-slider__prev
-		left 0
+		left 0	!important
 
 	.licenses-slider__next
 		right 18%
 	.licenses-slider__prev
 		left 18%
 
+	.digit-item
+		width 23%
+
+	.request-form
+		padding-top 0
+		padding-bottom 0
+		display flex
+		flex-direction column
+		justify-content center
+
 
 
 @media screen and (max-width 1440px)
+	.header-nav__menu
+		margin-left 38px
+		li
+			padding 10px
+
+	.header__contact
+		.contact-phone
+			margin-left 38px
+
 	.section-slider__prev
 		left 26%
 	.section-slider__next
 		right 26%
 
-	.js-slider__next
-		right 0
-	.js-slider__prev
-		left 0
+	.licenses-slider__next
+		right 16%
+	.licenses-slider__prev
+		left 16%
+
+@media screen and (max-width 1340px)
+	.hide-tablet
+		display none
+
+	.header-nav__menu
+		width 90%
+
+	.section-slider__prev
+		left 24%
+	.section-slider__next
+		right 24%
 
 	.licenses-slider__next
-		right 17%
+		right 14%
 	.licenses-slider__prev
-		left 17%
-
-@media screen and (max-width 1100px)
-	/**/
+		left 14%
 		
-@media screen and (max-width 950px)
-	/**/
+@media screen and (max-width 768px)
+	.container
+		width 94%
+
+	.header-nav__menu
+		display none
+
+	.header__action
+		margin-right 122px
+	.header__contact
+		.contact-phone
+			margin-left 80px
+	.nav-mobile
+		display block
+
+	.head-block__content
+		height 100%
+		padding-top 259px
+	.head-block__content
+		flex-direction column
+
+	.section-slider__prev
+		left 3%
+	.section-slider__next
+		right 3%
+
+	.head-form
+		width 100%
+		margin 46px 0 102px
+	.head-block__slider
+		.slick-dots
+			bottom 3px
+	.js-slider
+		width 690px
+	.js-slider__next,
+	.js-slider__prev
+		bottom 13px
+
+	.advantages-item
+		width 50%
+		&:nth-child(2),
+		&:nth-child(5)
+			width 50%
+		&:nth-child(3),
+		&:nth-child(4)
+			padding-top 60px
+			padding-bottom 60px
+		&:nth-child(-n+3)
+			padding-left 0
+		&:nth-last-child(-n+3)
+			padding-left 0
+		&:nth-child(3n+3)
+			border-top 1px solid rgba(0, 0, 0, 0.25)
+			border-right 1px solid rgba(0, 0, 0, 0.25)
+		&:nth-child(2n+2)
+			padding-left 15px
+			border-right none
+
+	.services
+		margin-top 95px
+	.services-items
+		flex-direction column
+		margin-top 59px
+	.services-item__wrap
+		flex-direction column
+		margin-bottom 30px
+		border-radius 5px
+		overflow hidden
+		&:nth-child(2n+2)
+			flex-direction column-reverse
+	.services-item
+		width 100%
+		height 411px
+	.services-item_text
+		padding 0 100px
+		padding-top 75px
+	.services-item_img
+		max-width 100%
+
+	.digit
+		margin-top 71px
+	.digit-items
+		flex-wrap wrap
+	.digit-item
+		width 49%
+		&:nth-child(-n+2)
+			margin-bottom 60px
+
+	.section-form
+		min-height 630px
+		padding-left 32px
+		padding-right 25px
+		background-image none
+		.section-form__box
+			display flex
+			flex-direction column
+			align-items flex-start
+			justify-content space-between
+			input
+				&:nth-child(3)
+					width 250px
+		.btn
+			width 250px
+	.section-form__img
+		display block
+
+	.solutions-items
+		padding-bottom 83px
+	.solutions-item	
+		width 330px
+		padding 28px
+		img
+			min-height 200px
+	.solutions-item__descr
+		margin-bottom 30px
+	
+	.completed-slider
+		padding-left 30px
+		padding-right 30px
+	.completed-item__block_max
+		width 100%
+	.completed-item__block_min
+		width 48%
+
+	.clients-item
+		width 50%
+		&:nth-child(odd)
+			background-color #fff
+		&:first-child,
+		&:nth-child(4n+4)
+			background-color grayBgColor
+	
+	.comments-items
+		padding-bottom 80px
+	.comments-item
+		padding 35px 30px
+	.comments-item__title
+		margin-bottom 40px
+	.comments-item__text
+		width 60%
+		margin-left 40px
+
+	.licenses-items
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 270px
+		border-radius 5px 5px 0 0
+	.licenses-item
+		p
+			width 191px
+			margin-top 27px
+	.licenses-item__img
+		img
+			min-height 265px
+	.licenses-action
+		width 96%
+		height 200px
+		background-image none
+		bottom -170px
+		left 14px
+		background-color grayBgColor
+		border-radius 0 0 5px 5px
+	.licenses-action__content
+		left 32px
+		bottom 64px
+		right auto
+		p 
+			width auto
+	.licenses-slider__next
+		right 1%
+	.licenses-slider__prev
+		left 1%
+
+	.request
+		margin-bottom 90px !important
+	.request-items
+		flex-direction column
+	.request-item__img
+		img
+			min-height 528px
+	.request-item__text
+		bottom 47px
+		left 31px
+	.request-form
+		width 100%
+		padding 67px 60px
+
+
+	.footer-content__top,
+	.footer-content__bottom
+		display none
+	.footer-content__tablet
+		display flex
+		.footer-block
+			width 432px
+		.footer-content__bottom
+			display block
+			position absolute
+			bottom -48px
+			left 0
+			p 
+				min-width 195px
+	.footer-block
+		margin-right 0
+	.footer-contact
+		.contact-phone
+			margin-bottom 14px
+			margin-right 9px
+	.footer-info
+		position relative
 		
 @media screen and (max-width 900px)
 	/**/
