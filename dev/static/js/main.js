@@ -43,6 +43,12 @@ $(document).ready(function(){
           slidesToShow: 2,
         }
       },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
     ],
     nextArrow: '.solutions-slider__next',
     prevArrow: '.solutions-slider__prev',
@@ -93,6 +99,12 @@ $(document).ready(function(){
         breakpoint: 769,
         settings: {
           slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
         }
       },
     ],

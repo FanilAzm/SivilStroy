@@ -182,11 +182,11 @@
 
 .nav-mobile
 	display none
-	position absolute
+	position relative
 	width 45px
 	height 45px
-	top 68px
-	right 18px
+	top 15px
+	right 3px
 	
 .nav-mobile__line
 	display block
@@ -199,10 +199,31 @@
 	cursor pointer
 
 .nav-mobile__line-top
-	top -17px
+	margin-top 0
+	top -8px
 	transition all linear .3s
 
 .nav-mobile__line-bottom
+	margin-bottom 0
 	top 17px
 	transition all linear .3s
+
+
+.email-mobile,
+.phone-mobile
+	display none
+	align-items center
+	justify-content center
+	width 33px
+	height 33px
+	background-color actionColor
+	border-radius 2px
+	svg
+		width 20px
+		height 20px
+		fill #ffffff
+	&:hover
+		background-color #fff
+		svg
+			fill actionColor
 	

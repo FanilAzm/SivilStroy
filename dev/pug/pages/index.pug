@@ -142,11 +142,12 @@ block content
 						.section-form__box
 							input(type="text" placeholder="Ваш номер телефона")
 					button(type="submit").btn Получить коммерческое предложение
+					button(type="submit").btn.btn-mobile Получить КП
 	section.advantages
 		.container
 			h3.h3 Наши преимущества
 			p.section-descr Осуществляем проектирование, монтаж, обслуживание, модернизацию и интгерацию систем видеонаблюдения для вашего объекта
-			.advantages-items
+			.advantages-items.section-items
 				.advantages-item
 					.advantages-item__img
 						img(src="static/img/content/video/verified.png", alt="Гарантия")
@@ -180,7 +181,7 @@ block content
 	section.services
 		.container
 			h3.h3 Наши услуги
-			.services-items
+			.services-items.section-items
 				.services-item__wrap
 					.services-item.services-item_img
 						img(src="static/img/content/video/services-img-1.png", alt="Проектирование видеонаблюдения")
@@ -224,7 +225,7 @@ block content
 	section.digit
 		.container
 			h3.h3 Наш опыт в цифрах
-			.digit-items
+			.digit-items.section-items
 				.digit-item
 					p.digit-item__count 20
 					h4.h4 лет опыта
@@ -251,11 +252,12 @@ block content
 						input(type="text" placeholder="Ваш номер телефона")
 						button(type="submit").btn Оставить заявку
 					.section-form__img
-						img(src="static/img/content/section-form-img.png", alt="Изображение формы")
+						img(src="static/img/content/section-form-img.png", alt="Изображение формы").section-form__img_tablet
+						img(src="static/img/content/section-form-phone.png", alt="Изображение формы").section-form__img_mobile
 	section.solutions
 		.container
 			h3.h3 Типовые решения
-			.solutions-items
+			.solutions-items.section-items
 				.solutions-slider__next.section-slider__next
 					svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 						path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -305,7 +307,7 @@ block content
 	section.completed.section-margin
 		.container
 			h3.h3 Наши реализованные проекты
-			.completed-items
+			.completed-items.section-items
 				.completed-slider__next.section-slider__next
 					svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 						path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -420,7 +422,7 @@ block content
 		.container
 			h3.h3 Наши клиенты
 			p.section-descr Наши отношения с клиентами ежегодно укрепляются потому что мы клевые, а вы — нет :)
-			.clients-items
+			.clients-items.section-items
 				.clients-slider__next.section-slider__next
 					svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 						path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -445,9 +447,9 @@ block content
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
 							.clients-item
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
-							.clients-item
+							.clients-item.hide-mobile
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
-							.clients-item
+							.clients-item.hide-mobile
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
 							.clients-item.hide-tablet
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
@@ -467,9 +469,9 @@ block content
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
 							.clients-item
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
-							.clients-item
+							.clients-item.hide-mobile
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
-							.clients-item
+							.clients-item.hide-mobile
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
 							.clients-item.hide-tablet
 								img(src="static/img/content/video/client-img.png", alt="ОАО НПП Звезда")
@@ -486,7 +488,7 @@ block content
 	section.licenses.section-margin
 		.container
 			h3.h3 Лицензии
-			.licenses-items
+			.licenses-items.section-items
 				.licenses-slider__next.section-slider__next
 					svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 						path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -538,7 +540,7 @@ block content
 		.container
 			h3.h3 Отзывы
 			p.section-descr А вот тут наши кевые клиенты пишут свои клевые отзывы.
-			.comments-items
+			.comments-items.section-items
 				.comments-slider__next.section-slider__next
 					svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 						path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -588,7 +590,7 @@ block content
 	section.request.section-margin
 		.container
 			h3.h3 Оставьте заявку на коммерческое предложение
-			.request-items
+			.request-items.section-items
 				.request-item
 					.request-item__img
 						img(src="static/img/content/video/request-photo.png", alt="Игорь Степанович")
@@ -612,6 +614,7 @@ block content
 					.section-form__box
 						input(type="text" placeholder="Ваш номер телефона")
 					button(type="submit").btn Получить коммерческое предложение
+					button(type="submit").btn.btn-mobile Получить КП
 
 					
 

@@ -79,7 +79,7 @@
 			display block
 
 	.header__action
-		margin-right 122px
+		margin-right 76px
 	.header__contact
 		.contact-phone
 			margin-left 80px
@@ -282,8 +282,231 @@
 	.footer-info
 		position relative
 		
-@media screen and (max-width 900px)
-	/**/
+@media screen and (max-width 480px)
+	.hide-mobile
+		display none
+	
+	.h1
+		font-size 32px
+		line-height 125%
+	.h3
+		font-size 28px
+
+	.section-descr
+		width auto
+
+	.section-margin
+		margin 60px 0
+	
+	.section-items
+		margin-top 30px
+
+	.header__action
+		display none
+	.email-mobile,
+	.phone-mobile
+		display flex
+	.logo
+		img
+			width 100px
+	.header-nav
+		flex 0
+
+	.js-slider
+		width 400px
+	.js-slide__text
+		p
+			width auto
+
+	.slick-dots
+		li 
+			width 30px
+			height 3px
+			margin 0 8px
+			&.slick-active
+				height 5px
+
+	.head-form
+		height auto
+		padding 15px
+		.btn
+			display none
+		.btn-mobile
+			display block
+	.section-form__box
+		flex-direction column
+		align-items flex-start
+		label
+			max-width 230px
+			margin-bottom 15px
+	.section-form__content
+		width 100%
+		input
+			font-weight bold
+			color actionColor
+	.section-form__info
+		margin-top 30px
+		.section-form__box
+			margin-bottom 30px
+	
+	.advantages-item
+		width 100%
+		&:nth-child(-n+3),
+		&:nth-last-child(-n+3)
+			border none
+		&:nth-child(-n+3)
+			padding-top 0
+			padding-bottom 40px
+		&:nth-child(2n+2)
+			padding-left 0
+		&:nth-child(2)
+			width 100%
+		&:nth-child(3),
+		&:nth-child(4)
+			padding-top 0
+		&:nth-last-child(-n+3)
+			padding-top 0
+
+	.services-item
+		height auto
+		min-height 159px
+		.btn
+			width 100%
+	.services-item_text
+		padding 15px
+	.services-item__descr
+		margin 15px 0
+
+	.digit-item
+		width 100%
+		margin-bottom 30px
+		&:nth-child(-n+2)
+			margin-bottom 30px
+
+	.section-form
+		padding 15px
+		padding-bottom 30px
+		.section-form__box
+			order 2
+			input
+				width 100%
+				margin-bottom 15px
+				&:nth-child(3)
+					width 100%
+		.btn
+			width 100%
+	.section-form__wrap
+		flex-direction column
+	.section-form__descr
+		width auto
+		margin 15px 0 30px
+	.section-form__img
+		display flex
+		order 1
+		margin-bottom 30px
+	.section-form__img_tablet
+		display none
+	.section-form__img_mobile
+		display block
+
+	.solutions-item
+		width 100%
+		padding 20px
+		.btn
+			width 100%
+	.solutions-item__title
+		margin-top 20px
+	.solutions-item__descr
+		margin 20px 0
+	
+	.completed-item__wrap
+		flex-direction column
+	.completed-item__block_min
+		width 100%
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+	.completed-slider
+		padding 20px
+
+	.clients-item
+		width 100%
+
+	.comments-item
+		flex-direction column
+		padding 20px
+	comments-item__img
+		width 100%
+	.comments-item__text
+		width 100%
+		margin 0
+	.comments-item__title
+		margin 15px 0 30px
+	
+	.licenses-action
+		width 93%
+		height auto
+	.licenses-action__content
+		position static
+		padding 30px
+
+	.request-item__img
+		border-radius 5px
+		overflow hidden
+		img
+			min-height 250px
+	.request-item__text
+		position static
+		margin-top 15px
+		color mainTextColor
+	.request-item__descr
+		width auto
+	.request-item__title
+		margin 15px 0
+
+	.request-form
+		margin-top 30px
+		padding 20px
+		.btn
+			display none
+		.btn-mobile
+			display block
+		.section-form__box
+			margin-bottom 15px
+		.new-select
+			padding 5px 20px
+		.new-select__list
+			top 57px
+		.new-select__item
+			span
+				padding 10px
+
+	.footer-content__tablet
+		justify-content space-between
+		order 1
+		.footer-block
+			width auto
+	.footer-contact
+		display none
+	.footer-block
+		flex-direction column
+	.contact-email
+		display none
+	.footer-info
+		.footer-content__bottom
+			display none
+		.email-mobile,
+		.phone-mobile
+			background-color #fff
+		svg
+			fill #06272A
+	.footer-content__bottom
+		display flex
+		order 2
+		justify-content center
+		align-items center
+
+		
 
 @media screen and (max-width 750px)
 	/**/
