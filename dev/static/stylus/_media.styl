@@ -359,11 +359,13 @@
 			padding-bottom 40px
 		&:nth-child(2n+2)
 			padding-left 0
-		&:nth-child(2)
+		&:nth-child(2),
+		&:nth-child(5)
 			width 100%
 		&:nth-child(3),
 		&:nth-child(4)
 			padding-top 0
+			padding-bottom 30px
 		&:nth-last-child(-n+3)
 			padding-top 0
 
@@ -435,7 +437,7 @@
 	.comments-item
 		flex-direction column
 		padding 20px
-	comments-item__img
+	.comments-item__img
 		width 100%
 	.comments-item__text
 		width 100%
@@ -481,15 +483,26 @@
 			span
 				padding 10px
 
+	.footer-content
+		padding 30px 0
 	.footer-content__tablet
 		justify-content space-between
 		order 1
+		margin-bottom 30px
 		.footer-block
 			width auto
 	.footer-contact
 		display none
 	.footer-block
 		flex-direction column
+	.footer-menu
+		li
+			margin-bottom 15px
+	.footer-block__title
+		margin-bottom 15px
+		font-size 20px
+		&:last-child
+			margin-bottom 0
 	.contact-email
 		display none
 	.footer-info
@@ -498,8 +511,12 @@
 		.email-mobile,
 		.phone-mobile
 			background-color #fff
-		svg
-			fill #06272A
+			svg
+				fill #06272A
+			&:hover
+				background-color actionColor
+				svg
+					fill #ffffff
 	.footer-content__bottom
 		display flex
 		order 2
@@ -517,8 +534,94 @@
 @media screen and (max-width 400px)
 	/**/
 
-@media screen and (max-width 350px)
-	/**/
+@media screen and (max-width 320px)
+	html
+		font-size 14px
+	.container
+		width 90%
+	.h1
+		font-size 24px
+	.h3
+		font-size 20px
+	.h4
+		font-size 16px
+		line-height 20px
+		margin 0
+	.btn
+		// max-width 231px
+	.section-descr
+		margin-top 31px
+	.header__content
+		height 122px
+	.logo
+		img
+			width 71px
+	.email-mobile
+		margin-right 15px
+	.phone-mobile
+		margin-right 15px
+	.nav-mobile
+		width 38px
+		height 38px
+		top 8px
+		right -3px
+	.nav-mobile__line
+		width 38px
+	.nav-mobile__line-top
+		top -4px
+	.nav-mobile__line-bottom
+		top 14px
+	
+
+	.head-block__content
+		width 250px
+		padding-top 177px
+	.js-slider
+		width 250px
+	.js-slide__text
+		margin-bottom 35px
+		h1
+			margin-bottom 31px
+	.js-slider__next,
+	.js-slider__prev
+		bottom 29px
+	.head-block__slider
+		.slick-dots
+			bottom 23px
+			li
+				width 20px
+				margin 0 4px
+	.head-form
+		width 261px
+		margin 0 0 68px
+
+	.section-form__box
+		margin-bottom 12px
+		label
+			margin-bottom 12px
+	.section-form__info
+		.section-form__box
+			margin-bottom 15px
+
+	.advantages
+		margin-top 60px
+	.advantages-item__descr
+		width auto
+
+	.services
+		margin-top 30px
+	.services-item__wrap
+		width 261px
+	.services-item_img
+		height 159px
+
+	.digit
+		margin-top 16px
+		.h4
+			margin 11px 0
+	.section-form
+		margin 75px 0
+		
 
 
 

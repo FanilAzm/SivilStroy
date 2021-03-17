@@ -4146,9 +4146,11 @@ button {
 .footer-menu a {
   padding-bottom: 7px;
   border-bottom: 3px solid transparent;
+  color: rgba(255,255,255,0.5);
 }
 .footer-menu a.active {
   border-bottom: 3px solid #fff;
+  color: #fff;
   font-family: "Montserrat-Bold", Arial, sans-serif;
 }
 .footer-menu a:hover {
@@ -4170,6 +4172,7 @@ button {
   color: #fff;
 }
 .footer-copyright {
+  color: rgba(255,255,255,0.5);
   text-align: center;
   font-size: 14px;
 }
@@ -4642,12 +4645,14 @@ button {
   .advantages-item:nth-child(2n+2) {
     padding-left: 0;
   }
-  .advantages-item:nth-child(2) {
+  .advantages-item:nth-child(2),
+  .advantages-item:nth-child(5) {
     width: 100%;
   }
   .advantages-item:nth-child(3),
   .advantages-item:nth-child(4) {
     padding-top: 0;
+    padding-bottom: 30px;
   }
   .advantages-item:nth-last-child(-n+3) {
     padding-top: 0;
@@ -4746,7 +4751,7 @@ button {
         flex-direction: column;
     padding: 20px;
   }
-  comments-item__img {
+  .comments-item__img {
     width: 100%;
   }
   .comments-item__text {
@@ -4804,11 +4809,15 @@ button {
   .request-form .new-select__item span {
     padding: 10px;
   }
+  .footer-content {
+    padding: 30px 0;
+  }
   .footer-content__tablet {
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-order: 1;
         order: 1;
+    margin-bottom: 30px;
   }
   .footer-content__tablet .footer-block {
     width: auto;
@@ -4820,6 +4829,16 @@ button {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .footer-menu li {
+    margin-bottom: 15px;
+  }
+  .footer-block__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .footer-block__title:last-child {
+    margin-bottom: 0;
+  }
   .contact-email {
     display: none;
   }
@@ -4830,8 +4849,17 @@ button {
   .footer-info .phone-mobile {
     background-color: #fff;
   }
-  .footer-info svg {
+  .footer-info .email-mobile svg,
+  .footer-info .phone-mobile svg {
     fill: #06272a;
+  }
+  .footer-info .email-mobile:hover,
+  .footer-info .phone-mobile:hover {
+    background-color: #1a98a6;
+  }
+  .footer-info .email-mobile:hover svg,
+  .footer-info .phone-mobile:hover svg {
+    fill: #fff;
   }
   .footer-content__bottom {
     display: -ms-flexbox;
@@ -4842,5 +4870,115 @@ button {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 90%;
+  }
+  .h1 {
+    font-size: 24px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .section-descr {
+    margin-top: 31px;
+  }
+  .header__content {
+    height: 122px;
+  }
+  .logo img {
+    width: 71px;
+  }
+  .email-mobile {
+    margin-right: 15px;
+  }
+  .phone-mobile {
+    margin-right: 15px;
+  }
+  .nav-mobile {
+    width: 38px;
+    height: 38px;
+    top: 8px;
+    right: -3px;
+  }
+  .nav-mobile__line {
+    width: 38px;
+  }
+  .nav-mobile__line-top {
+    top: -4px;
+  }
+  .nav-mobile__line-bottom {
+    top: 14px;
+  }
+  .head-block__content {
+    width: 250px;
+    padding-top: 177px;
+  }
+  .js-slider {
+    width: 250px;
+  }
+  .js-slide__text {
+    margin-bottom: 35px;
+  }
+  .js-slide__text h1 {
+    margin-bottom: 31px;
+  }
+  .js-slider__next,
+  .js-slider__prev {
+    bottom: 29px;
+  }
+  .head-block__slider .slick-dots {
+    bottom: 23px;
+  }
+  .head-block__slider .slick-dots li {
+    width: 20px;
+    margin: 0 4px;
+  }
+  .head-form {
+    width: 261px;
+    margin: 0 0 68px;
+  }
+  .section-form__box {
+    margin-bottom: 12px;
+  }
+  .section-form__box label {
+    margin-bottom: 12px;
+  }
+  .section-form__info .section-form__box {
+    margin-bottom: 15px;
+  }
+  .advantages {
+    margin-top: 60px;
+  }
+  .advantages-item__descr {
+    width: auto;
+  }
+  .services {
+    margin-top: 30px;
+  }
+  .services-item__wrap {
+    width: 261px;
+  }
+  .services-item_img {
+    height: 159px;
+  }
+  .digit {
+    margin-top: 16px;
+  }
+  .digit .h4 {
+    margin: 11px 0;
+  }
+  .section-form {
+    margin: 75px 0;
   }
 }
