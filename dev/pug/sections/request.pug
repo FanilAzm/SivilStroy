@@ -1,0 +1,26 @@
+section.request.section-margin
+	.container
+		h3.h3 Оставьте заявку на коммерческое предложение
+		.request-items.section-items
+			.request-item
+				.request-item__img
+					img(src="static/img/content/video/request-photo.png", alt="Игорь Степанович")
+				.request-item__text
+					.request-item__name Игорь Степанович
+					.request-item__title Руководитель компании
+					.request-item__descr Занимаюсь всякими штуками, рисую проекты, наблюдаю наблюдения, красиво стою и улыбаюсь читаю ваши заявочки. Поэтому не оставляйте меня без работы и скорее оставляйте свою заявку!
+			form.request-form
+				h4.h4 Выберите услугу:
+				.section-form__box
+					.section-form__content
+						select.select(name='project')
+							option(disabled='') Проектирование видеонаблюдения
+							option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
+							option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
+							option(value='Проектирование видеонаблюдения') Проектирование видеонаблюдения
+				.section-form__info
+					input(type="text" placeholder="Ваше имя").section-form__input
+					input(type="text" placeholder="Ваш e-mail").section-form__input
+					input(type="text" placeholder="Ваш номер телефона").section-form__input
+				button(type="submit").btn Получить коммерческое предложение
+				button(type="submit").btn.btn-mobile Получить КП

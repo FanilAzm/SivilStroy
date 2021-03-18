@@ -5,7 +5,7 @@
 .footer-content
 	display flex
 	flex-direction column
-	padding 83px 0
+	padding 83px 0 60px
 
 .footer-content__top
 	display flex
@@ -45,15 +45,14 @@
 	li
 		margin-bottom 27px
 	a
-		padding-bottom 7px
+		padding-bottom 2px
 		border-bottom 3px solid transparent
 		color rgba(255, 255, 255, 0.5)
-		&.active
+		&:hover
+			text-decoration none
 			border-bottom 3px solid #ffffff
 			color #ffffff
 			font-family boldFont
-		&:hover
-			text-decoration none
 
 .footer-contact
 	display flex

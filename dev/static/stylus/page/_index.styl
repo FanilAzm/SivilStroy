@@ -1,5 +1,5 @@
 .head-block
-	background-image url(../../static/img/content/video/head-bg.png)
+	background-image url(../../static/img/content/video-bg.png)
 	background-size cover
 	background-position center
 
@@ -61,56 +61,6 @@
 	background-color rgba(255, 255, 255, 0.75)
 	.btn
 		width 100%
-
-.section-form__box
-	display flex
-	align-items center
-	justify-content space-between
-	margin-bottom 30px
-	label
-		max-width 180px
-		margin 0
-	input
-		width 100%
-		height 60px
-		padding 20px
-		border 1px solid mainColor
-		border-radius 5px
-		background-color #fff
-		-moz-appearance none
-		-webkit-appearance none
-		appearance none
-
-.section-form__content
-	display flex
-	align-items center
-	width 325px
-	button
-		width 30px
-		height 30px
-		padding 0
-		border 1px solid mainColor
-		border-radius 5px
-		background-color #fff
-		svg
-			width 10px
-			height 20px
-			fill titleColor
-		&:hover
-			background-color titleColor
-			border 1px solid titleColor
-			svg
-				fill #ffffff
-	input
-		height 30px
-		width 45px
-		border none
-		background-color transparent
-
-.section-form__info
-	margin-top 60px
-	.section-form__box
-		margin-bottom 45px
 
 
 .advantages
@@ -233,38 +183,6 @@
 	line-height 72px
 	color titleColor
 
-
-.section-form
-	margin 100px 0
-	padding 57px 60px
-	background-image url(../../static/img/content/section-form-bg.png)
-	background-repeat no-repeat
-	background-position right center
-	background-color titleColor
-	border-radius 5px
-	color #ffffff
-	.section-form__box
-		justify-content flex-start
-		margin-bottom 0
-		input
-			width 250px
-			margin-right 40px
-			border none
-			&:nth-child(3)
-				width 300px
-
-.section-form__descr
-	width 620px
-	margin 40px 0 34px
-
-.section-form__wrap
-	display flex
-
-.section-form__img
-	display none
-	img
-		width 100%
-
 		
 .solutions-items
 	position relative
@@ -283,7 +201,6 @@
 
 .solutions-item__descr
 	margin 18px 0
-
 
 
 .completed-items
@@ -538,12 +455,11 @@
 	background-color grayBgColor
 	.h4
 		margin-bottom 33px
-	.section-form__box
+	.section-form__input
+		width 100%
 		margin-bottom 45px
-		input
-			width 100%
-		select
-			padding 20px 35px
+	select
+		padding 20px 35px
 	.section-form__content
 		width 100%
 	.btn

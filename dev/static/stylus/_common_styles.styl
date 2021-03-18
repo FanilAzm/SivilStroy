@@ -139,8 +139,114 @@
 		background-color titleColor
 		color #fff
 
+.btn-action
+	display block
+	position relative
+	padding 0
+	color actionColor
+	font-family boldFont
+	line-height 22px
+	&:hover
+		text-decoration none
+		color mainTextColor
+		&:before
+			background-color mainTextColor
+	&:before
+		content ''
+		position absolute
+		bottom -10px
+		left 0
+		width 100%
+		height 3px
+		border-radius 1px
+		background-color actionColor
+
 .btn-mobile
 	display none
+
+.section-form__box
+	display flex
+	align-items center
+	justify-content space-between
+	margin-bottom 30px
+
+.section-form__content
+	display flex
+	align-items center
+	width 325px
+	button
+		width 30px
+		height 30px
+		padding 0
+		border 1px solid mainColor
+		border-radius 5px
+		background-color #fff
+		svg
+			width 10px
+			height 20px
+			fill titleColor
+		&:hover
+			background-color titleColor
+			border 1px solid titleColor
+			svg
+				fill #ffffff
+	
+.section-form__title
+	max-width 180px
+	margin 0
+
+.section-form__input
+	width 100%
+	height 60px
+	padding 20px
+	border 1px solid mainColor
+	border-radius 5px
+	background-color #fff
+				
+.section-form__input_count
+	height 30px
+	width 45px
+	border none
+	background-color transparent
+	text-align center
+
+.section-form__info
+	margin-top 60px
+	.section-form__input
+		margin-bottom 45px
+
+
+.section-form
+	margin 100px 0
+	padding 57px 60px
+	background-image url(../../static/img/content/section-form-bg.png)
+	background-repeat no-repeat
+	background-position right center
+	background-color titleColor
+	border-radius 5px
+	color #ffffff
+	.section-form__box
+		justify-content flex-start
+		margin-bottom 0
+		.section-form__input
+			width 250px
+			margin-right 40px
+			border none
+			&:nth-child(3)
+				width 300px
+
+.section-form__descr
+	width 620px
+	margin 40px 0 34px
+
+.section-form__wrap
+	display flex
+
+.section-form__img
+	display none
+	img
+		width 100%
+
 
 .select
 	position relative
@@ -198,6 +304,53 @@
 			color mainColor
 	&:last-child
 		border none
+
+
+.section-form__box_checkbox
+	align-items flex-start
+	.section-form__content
+		flex-direction column
+
+.checkbox
+	position relative
+	display flex
+	align-items center
+	width 100%
+	height 46px
+	padding-left 60px
+	margin-bottom 15px
+	input[type="checkbox"]
+		display none
+		&:checked
+			& + .custom-checkbox
+				&:before
+					width 30px
+					height 30px
+					background-color #ffffff
+				&:after
+					display inline-block
+			
+	.custom-checkbox
+		position absolute
+		left 0
+		bottom 0
+		&:before
+			content ''
+			display inline-block
+			width 30px
+			height 30px
+			background-color #fff
+			border 1px solid rgba(0, 0, 0, 0.25)
+		&:after
+			content ''
+			position absolute
+			top 24%
+			left 50%
+			transform translateX(-50%)
+			display none
+			width 12px
+			height 12px
+			sprite($s-check)
 
 
 
