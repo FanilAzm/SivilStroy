@@ -37,30 +37,44 @@
 		color #000
 		cursor pointer
 		text-decoration none
-		&:before
-			content none
-		&:after
-			content ''
+		svg
 			position absolute
-			top 5px
-			right 0
-			width 20px
-			height 10px
-			sprite($s-arrow-menu2)
-		&.active
+			top 3px
+			right -5px
+			width 30px
+			height 20px
+			fill #000000
+			-webkit-transition all .27s ease-in-out
+			-o-transition all .27s ease-in-out
+			transition all .27s ease-in-out
+			-webkit-transform rotate(0deg)
+			-ms-transform rotate(0deg)
+			-o-transform rotate(0deg)
+			transform rotate(0deg)
+		
+.header-nav__menu-item
+	position relative
+	&.active
+		.header-nav__submenu
+			display block
+			li
+			
+				a
+					&:hover
+						font-family boldFont
+						color mainTextColor
+		.header__btn
 			font-family boldFont
 			color actionColor
 			&:before
 				content ''
-			&:after
-				display block
-				sprite($s-arrow-menu)
-		
-.header-nav__menu-item
-	position relative
-	&:hover
-		.header-nav__submenu
-			display block
+				background-color actionColor
+			svg
+				fill actionColor
+				-webkit-transform rotate(180deg)
+				-ms-transform rotate(180deg)
+				-o-transform rotate(180deg)
+				transform rotate(180deg)
 
 .header-nav__submenu
 	display none
@@ -73,9 +87,6 @@
 	li
 		a
 			color rgba(0, 0, 0, 0.5)
-			&.active
-				font-family boldFont
-				color mainTextColor
 
 .header__action
 	display flex
@@ -108,7 +119,7 @@
 		&:before
 			background-color mainTextColor
 	&:before
-		content ''
+		content none
 		position absolute
 		bottom -12px
 		left 0

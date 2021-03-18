@@ -156,6 +156,20 @@
 
 .services-item__wrap
 	display flex
+	&.active
+		.services-item
+			button
+				display none
+		.services-item_text
+			padding 30px
+			height 564px
+		.services-item__descr
+			display none
+		.services-item__descr_full
+			display block
+		.services-item_img
+			img
+				height 100%
 
 .services-item
 	display flex
@@ -363,6 +377,23 @@
 		background-color grayBgColor
 
 
+.licenses
+	&.active
+		.licenses-items
+			border-radius 5px
+			.slick-dotted.slick-slider
+				margin-bottom 80px
+			.licenses-item[data-slick-index="3"],
+			.licenses-item[data-slick-index="4"]
+				opacity 1
+		.slick-dots
+			opacity 1
+		.licenses-slider__next,
+		.licenses-slider__prev
+			opacity 1
+		.licenses-action
+			display none
+			
 
 .licenses-items
 	position relative
