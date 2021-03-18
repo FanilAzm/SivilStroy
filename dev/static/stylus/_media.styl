@@ -176,6 +176,10 @@
 			width 250px
 	.section-form__img
 		display block
+	.section-form__img_tablet
+		display block
+	.section-form__img_mobile
+		display none
 
 	.solutions-items
 		padding-bottom 83px
@@ -213,10 +217,18 @@
 		width 60%
 		margin-left 40px
 
+	.licenses
+		.section-slider__next,
+		.section-slider__prev
+			bottom 15px
+		.section-slider__next
+			right 7%
+		.section-slider__prev
+			left 7%
 	.licenses-items
 		padding-left 30px
 		padding-right 30px
-		margin-bottom 270px
+		margin-bottom 0
 		border-radius 5px 5px 0 0
 	.licenses-item
 		p
@@ -226,7 +238,8 @@
 		img
 			min-height 265px
 	.licenses-action
-		width 96%
+		position static
+		width 100%
 		height 200px
 		background-image none
 		bottom -170px
@@ -688,12 +701,9 @@
 	.licenses-items
 		padding 15px
 		padding-bottom 40px
-		margin-bottom 0
 	.licenses-item
 		p
 			margin-top 15px
-	.licenses-action
-		position static
 		width 100%
 	.licenses-action__content
 		padding 30px 15px

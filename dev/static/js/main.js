@@ -126,6 +126,7 @@ $(document).ready(function(){
 
   $('#all-licenses').click(function(){
     $('.licenses-action').css({ 'display' : 'none' });
+    $('.licenses-items').css({ 'border-radius':'5px' })
     $('.licenses-items .slick-dotted.slick-slider').css({ 'margin-bottom' : '80px' });
     $('.licenses-item[data-slick-index="3"]').css({ 'opacity' : '1' });
     $('.licenses-item[data-slick-index="4"]').css({ 'opacity' : '1' });
