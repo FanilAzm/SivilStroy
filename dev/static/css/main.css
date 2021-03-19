@@ -3021,7 +3021,6 @@ button {
 .section-slider .slick-dots {
   position: absolute;
   bottom: -89px;
-  left: 0;
 }
 .section-slider .slick-dots li {
   background-color: rgba(0,0,0,0.15);
@@ -3691,6 +3690,8 @@ button {
 .head-block__slider .slick-dots {
   max-width: 666px;
   bottom: -145px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .js-slider {
   width: 666px;
@@ -4314,6 +4315,21 @@ button {
 .stages-item__descr {
   max-width: 282px;
   text-align: center;
+}
+.fire-page .head-block {
+  background-image: url("../../static/img/content/fire-bg.png");
+}
+.fire-page .js-slider {
+  width: 713px;
+}
+.security-page .head-block {
+  background-image: url("../../static/img/content/security-bg.png");
+}
+.security-page .js-slider {
+  width: 713px;
+}
+.cable-networks-page .head-block {
+  background-image: url("../../static/img/content/cable-networks-bg.png");
 }
 .footer {
   background-color: #06272b;
