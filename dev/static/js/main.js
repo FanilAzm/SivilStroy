@@ -138,6 +138,16 @@ $(document).ready(function(){
     $('.licenses').addClass('active');
   });
 
+  $('.security-item .btn-action').click(function(){
+    $(this).closest('.security-items').css({'min-height':'745px'});
+    $(this).closest('.security-item').addClass('active');
+  });
+
+  $('.security-item__img').click(function(){
+    $(this).closest('.security-item').addClass('active');
+    $(this).closest('.security-item').siblings().removeClass('active');
+  });
+
   $('.select').each(function() {
     const _this = $(this),
         selectOption = _this.find('option'),

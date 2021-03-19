@@ -1,5 +1,107 @@
 .security-page
 	.head-block
 		background-image url(../../static/img/content/security-bg.png)
-	.js-slider
-		width 713px
+
+.security-items
+	position relative
+	display flex
+	justify-content space-between
+	padding 30px
+	background linear-gradient(93.58deg, #1A777E 0%, #1A98A6 99.22%)
+	border-radius 5px
+	transition all ease .5s
+
+.security-item
+	width 33%
+	padding 30px
+	border-radius 5px
+	color #ffffff
+	transition all ease .5s
+	.h4
+		margin 30px 0
+	.btn-action
+		margin-top 10px
+		font-size 16px
+		font-family mainFont
+		color #ffffff
+		text-decoration underline
+		&:before
+			content none
+		&:hover
+			text-decoration none
+	&.active
+		background-color grayBgColor
+		color mainTextColor
+		.security-item__hide
+			display block
+		.security-item__visible
+			display none
+
+.security-item__img
+	border-radius 5px
+	cursor pointer
+	img
+		width 100%
+
+.security-item__visible
+	display flex
+	flex-direction column
+	align-items flex-start
+	width 100%
+
+.security-item__hide
+	display none
+	position absolute
+	bottom 30px
+	left 30px
+	right 30px
+	width auto
+	height auto
+	padding 30px
+	padding-top 0
+	border-radius 5px
+	background-color grayBgColor
+	color mainTextColor
+	transition all ease .5s
+	.h4
+		margin 15px 0 20px
+
+
+.smartphone-control
+	.h3
+		max-width 815px
+
+.smartphone-control-item
+	display flex
+	justify-content space-around
+
+.smartphone-control-item__img
+	position relative
+	display flex
+	flex-direction column
+	align-items center
+	width 40%
+	&:before
+		content ''
+		position absolute
+		top 40%
+		left 50%
+		transform translate(-50%,-40%)
+		width 280px
+		height 173px
+		background-image url(../../static/img/content/video/smartphone-logo.png)
+		background-repeat no-repeat
+
+.smartphone-control-item__link
+	display flex
+	justify-content space-between
+	width 480px
+	margin-top 30px
+
+.smartphone-control-item__text
+	width 40%
+
+.smartphone-control-item__descr
+	margin-bottom 30px
+	&:last-child
+		margin-bottom 0
