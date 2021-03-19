@@ -1,3 +1,42 @@
 .cable-networks-page
 	.head-block
 		background-image url(../../static/img/content/cable-networks-bg.png)
+	.head-block__content
+		justify-content center
+	.js-slide__content
+		width 100%
+		padding 60px
+
+.cable-networks__content
+	display flex
+	justify-content space-between
+
+.cable-networks__table
+	margin-bottom 34px
+	thead
+		font-family boldFont
+		&:after
+			content ''
+			display table-row
+			height 30px
+	tbody
+		td
+			padding-right 45px
+			border-top 10px solid transparent
+			border-bottom 10px solid transparent
+			&:last-child
+				padding-right 0
+	
+	.section-form__title
+		min-width 282px
+
+.cable-networks__form
+	width 531px
+	.section-form__info
+		margin 60px 0
+	.section-form__input
+		margin-bottom 40px
+		&:last-child
+			margin-bottom 0
+	.btn
+		width 100%

@@ -3192,32 +3192,33 @@ button {
       align-items: center;
   width: 325px;
 }
-.section-form__content button {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border: 1px solid #00737a;
-  border-radius: 5px;
-  background-color: #fff;
-}
-.section-form__content button svg {
-  width: 10px;
-  height: 20px;
-  fill: #115b64;
-}
-.section-form__content button:hover {
-  background-color: #115b64;
-  border: 1px solid #115b64;
-}
-.section-form__content button:hover svg {
-  fill: #fff;
-}
 .section-form__content .checkbox:last-child {
   margin-bottom: 0;
 }
 .section-form__title {
   max-width: 180px;
   margin: 0;
+}
+.section-form__btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #00737a;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.section-form__btn svg {
+  width: 10px;
+  height: 20px;
+  fill: #115b64;
+}
+.section-form__btn:hover {
+  background-color: #115b64;
+  border: 1px solid #115b64;
+}
+.section-form__btn:hover svg {
+  fill: #fff;
 }
 .section-form__input {
   width: 100%;
@@ -4575,6 +4576,57 @@ button {
 }
 .cable-networks-page .head-block {
   background-image: url("../../static/img/content/cable-networks-bg.png");
+}
+.cable-networks-page .head-block__content {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.cable-networks-page .js-slide__content {
+  width: 100%;
+  padding: 60px;
+}
+.cable-networks__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.cable-networks__table {
+  margin-bottom: 34px;
+}
+.cable-networks__table thead {
+  font-family: "Montserrat-Bold", Arial, sans-serif;
+}
+.cable-networks__table thead:after {
+  content: '';
+  display: table-row;
+  height: 30px;
+}
+.cable-networks__table tbody td {
+  padding-right: 45px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.cable-networks__table tbody td:last-child {
+  padding-right: 0;
+}
+.cable-networks__table .section-form__title {
+  min-width: 282px;
+}
+.cable-networks__form {
+  width: 531px;
+}
+.cable-networks__form .section-form__info {
+  margin: 60px 0;
+}
+.cable-networks__form .section-form__input {
+  margin-bottom: 40px;
+}
+.cable-networks__form .section-form__input:last-child {
+  margin-bottom: 0;
+}
+.cable-networks__form .btn {
+  width: 100%;
 }
 .footer {
   background-color: #06272b;
