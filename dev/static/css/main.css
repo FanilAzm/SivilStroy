@@ -3098,9 +3098,10 @@ button {
   height: 60px;
   line-height: 50px;
   min-width: 240px;
-  border: none;
+  border: 1px solid transparent;
   background-color: #00737a;
   color: #fff;
+  font-size: 16px;
   font-family: "Montserrat-Bold", Arial, sans-serif;
 }
 .btn:hover {
@@ -3108,7 +3109,7 @@ button {
   color: #115b64;
 }
 .btn_border {
-  border: 1px solid #fff;
+  border-color: #fff;
 }
 .btn_border:hover {
   border-color: #fff;
@@ -3118,7 +3119,7 @@ button {
 .btn_transparent {
   background-color: transparent;
   color: #115b64;
-  border: 1px solid #115b64;
+  border-color: #115b64;
 }
 .btn_transparent:hover {
   border-color: #115b64;
@@ -3134,6 +3135,15 @@ button {
   border-color: #115b64;
   background-color: #115b64;
   color: #fff;
+}
+.btn_gradient {
+  background: linear-gradient(93.58deg, #1a777e 0%, #1a98a6 99.22%);
+  color: #fff;
+}
+.btn_gradient:hover {
+  border-color: #115b64;
+  background: #fff;
+  color: #115b64;
 }
 .btn-action {
   display: block;
@@ -4319,8 +4329,115 @@ button {
 .fire-page .head-block {
   background-image: url("../../static/img/content/fire-bg.png");
 }
-.fire-page .js-slider {
-  width: 713px;
+.fire-page .js-slide__content {
+  width: 777px;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.65);
+  border-radius: 5px;
+}
+.fire-page .h3 {
+  max-width: 100%;
+}
+.engineering-items {
+  display: -ms-flexbox;
+  display: flex;
+}
+.engineering-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.engineering-item__img {
+  width: 49%;
+  border-radius: 5px;
+}
+.engineering-item__img img {
+  width: 100%;
+}
+.engineering-item__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  width: 49%;
+  padding: 60px 30px;
+  border-radius: 5px;
+  background-color: #115b64;
+  color: #fff;
+}
+.engineering-item__content .btn {
+  width: 292px;
+}
+.engineering-item__content .btn_white {
+  font-size: 16px;
+  color: #115b64;
+}
+.engineering-item__content .btn_white:hover {
+  border-color: #fff;
+  color: #fff;
+}
+.engineering-item__content_white {
+  background-color: #f8f8f8;
+  color: #000;
+}
+.engineering-item__services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%;
+}
+.engineering-item__service-title {
+  max-width: 100px;
+  margin-top: 25px;
+  font-family: "Montserrat-Bold", Arial, sans-serif;
+}
+.engineering-item__descr {
+  font-size: 15px;
+}
+.documents-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.documents-item__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  width: 60%;
+}
+.documents-item__content .btn {
+  width: 390px;
+}
+.documents-item__img {
+  position: relative;
+  width: 383px;
+}
+.documents-item__img_rotate {
+  width: 270px;
+  position: absolute;
+  top: 60px;
+  left: 67%;
+  transform: rotate(30deg);
+  z-index: -1;
+}
+.documents-item__text {
+  margin: 15px 0 60px;
+}
+.documents-item__descr {
+  margin-bottom: 30px;
+}
+.documents-item__descr:last-child {
+  margin-bottom: 0;
 }
 .security-page .head-block {
   background-image: url("../../static/img/content/security-bg.png");

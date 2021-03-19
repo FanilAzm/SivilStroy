@@ -105,16 +105,17 @@
 	height 60px
 	line-height 50px
 	min-width 240px
-	border none
+	border 1px solid transparent
 	background-color mainColor
 	color #ffffff
+	font-size 16px
 	font-family boldFont
 	&:hover
 		background-color #fff
 		color titleColor
 
 .btn_border
-	border 1px solid #ffffff
+	border-color #ffffff
 	&:hover
 		border-color #fff
 		background-color #fff
@@ -123,7 +124,7 @@
 .btn_transparent
 	background-color transparent
 	color titleColor
-	border 1px solid titleColor
+	border-color titleColor
 	&:hover
 		border-color titleColor
 		background-color titleColor
@@ -137,6 +138,14 @@
 		border-color titleColor
 		background-color titleColor
 		color #fff
+
+.btn_gradient
+	background linear-gradient(93.58deg, #1A777E 0%, #1A98A6 99.22%)
+	color #ffffff
+	&:hover
+		border-color titleColor
+		background #fff
+		color titleColor
 
 .btn-action
 	display block
