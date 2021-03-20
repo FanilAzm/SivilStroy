@@ -1,0 +1,52 @@
+.security-home-page
+	.head-block
+		background-image url(../../static/img/content/security-home-bg.png)
+	.security-items
+		background grayBgColor
+	.security-item
+		color mainTextColor
+		.btn-action
+			color mainTextColor
+		&.active
+			background-color titleColor
+	.security-item__hide
+		background-color titleColor
+		color #ffffff
+
+.tariffs-items
+	display flex
+	justify-content space-between
+
+.tariffs-item
+	display flex
+	flex-direction column
+	align-items center
+	padding 30px
+	padding-bottom 60px
+	background linear-gradient(93.58deg, #1A777E 0%, #1A98A6 99.22%)
+	border-radius 5px
+	color #ffffff
+	.h4
+		display flex
+		align-self start
+
+.tariffs-item__table
+	width 430px
+	margin 30px 0 35px
+	tbody
+		td
+			padding 7px 0
+			&:first-child
+				padding-right 53px
+			&:last-child
+				padding-left 38px
+
+.check-icon
+	width 30px
+	height 30px
+
+.check-icon_add
+	sprite($s-add)
+
+.check-icon_cancel
+	sprite($s-cancel)

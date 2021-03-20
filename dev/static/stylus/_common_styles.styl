@@ -147,6 +147,13 @@
 		background #fff
 		color titleColor
 
+.btn_green
+	background-color greenBgColor
+	border-color #ffffff
+	&:hover
+		background-color #fff
+		color greenBgColor
+
 .btn-action
 	display block
 	position relative
@@ -171,6 +178,17 @@
 		height 3px
 		border-radius 1px
 		background-color actionColor
+
+.btn-action_black
+	margin 0 auto
+	font-size 24px
+	color #000000
+	&:before
+		background-color #000000
+	&:hover
+		color actionColor
+		&:before
+			background-color actionColor
 
 .btn-mobile
 	display none
@@ -274,7 +292,7 @@
 	border 1px solid mainColor
 	border-radius 5px
 	background-color #fff
-	padding 20px
+	padding 17px 20px
 	cursor pointer
 	user-select none
 	&:after 
@@ -292,7 +310,7 @@
 		-o-transform rotate(0deg)
 		transform rotate(0deg)
 	&.on
-		z-index 3
+		z-index 7
 		&:after 
 			-webkit-transform rotate(180deg)
 			-ms-transform rotate(180deg)
@@ -300,7 +318,7 @@
 			transform rotate(180deg)
 .new-select__list 
 	position absolute
-	top 63px
+	top 57px
 	left 0
 	border 1px solid mainColor
 	border-radius 0 0 5px 5px

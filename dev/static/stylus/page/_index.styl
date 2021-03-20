@@ -41,6 +41,13 @@
 	p
 		margin-left 14px
 
+.js-slide__btn
+	margin-top 50px
+	button
+		margin-right 50px
+		&:last-child
+			margin-right 0
+
 .js-slider__next,
 .js-slider__prev
 	position absolute
@@ -217,6 +224,7 @@
 .completed-item
 	display flex
 	flex-direction column
+	width 32%
 
 .completed-item__wrap
 	display flex
@@ -230,12 +238,12 @@
 	height 300px
 	border-radius 5px
 	overflow hidden
-	font-family boldFont
 	color #ffffff
 	p
 		position absolute
 		bottom 26px
 		left 30px
+		font-family boldFont
 		z-index 5
 	a
 		display none
@@ -245,8 +253,12 @@
 		transform translate(-50%, -50%)
 		border-bottom 3px solid #ffffff
 		font-size 24px
+		font-family boldFont
 		color #ffffff
 		z-index 5
+	img
+		width 100%
+		height 100%
 	&:before
 		content ''
 		display none
@@ -260,15 +272,13 @@
 	&:hover
 		a
 			display block
+			text-decoration none
 		&:before
 			display block
 
 
 .completed-item__block_max
 	width 49%
-	img
-		width 100%
-		height 100%
 
 .completed-item__block_min
 	width 23.5%
@@ -424,12 +434,14 @@
 
 .request-items
 	display flex
+	border-radius 5px
+	overflow hidden
 
 .request-item
 	position relative
+	width 60%
 
 .request-item__img
-	// width 60%
 	img
 		width 100%
 

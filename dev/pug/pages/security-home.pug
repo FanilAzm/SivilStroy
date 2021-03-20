@@ -1,0 +1,85 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Охранные системы для бизнеса';
+	- var pageClass = 'security-home-page';
+
+block content
+	section.head-block
+		.container
+			.head-block__content
+				.head-block__slider
+					.js-slide__content.js-slide__content_white
+						.js-slide__text
+							h1.h1 Охранные системы для бизнеса
+							p Осуществляем проектирование, монтаж, обслуживание, модернизацию и интгерацию систем видеонаблюдения для вашего объекта
+						.js-slide__items
+							.js-slide__item
+								img(src="static/img/content/video/verified.png", alt="Гарантия")
+								p Гарантия на все работы  - 2 года
+							.js-slide__item
+								img(src="static/img/content/video/support.png", alt="Поддержка")
+								p Техническая поддержка 24/7
+				form.head-form
+					.section-form__box
+						label.section-form__title Тип объекта
+						.section-form__content
+							select.select(name='video')
+								option(disabled='') Торговый центр
+								option(value='Торговый центр') Торговый центр
+								option(value='Торговый центр') Торговый центр
+								option(value='Торговый центр') Торговый центр
+					.section-form__box
+						label.section-form__title Площадь объекта, м2
+						.section-form__content
+							input(type="text" placeholder="100").section-form__input
+					.section-form__box
+						label.section-form__title Количество помещений
+						.section-form__content
+							select.select(name='date')
+								option(disabled='') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+					.section-form__box
+						label.section-form__title Датчики движений
+						.section-form__content
+							select.select(name='date')
+								option(disabled='') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+					.section-form__box
+						label.section-form__title Датчики открывания дверей
+						.section-form__content
+							select.select(name='date')
+								option(disabled='') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+								option(value='1-5') 1-5
+					.section-form__box
+						label.section-form__title Контрольная панель
+						.section-form__content
+							select.select(name='date')
+								option(disabled='') 1
+								option(value='1') 1
+								option(value='1') 1
+								option(value='1') 1
+					.section-form__box.section-form__box_checkbox
+						label.section-form__title
+						.section-form__content
+							label.checkbox Экипаж ЧОП
+								input(type='checkbox')
+								span.custom-checkbox
+							label.checkbox Экипаж Росгвардия
+								input(type='checkbox')
+								span.custom-checkbox
+					button(type="submit").btn.btn_gradient Оставить заявку
+	include ../sections/advantages
+	include ../sections/tariffs
+	include ../sections/security
+	include ../sections/smartphone-control
+	include ../sections/reviews
+	include ../sections/licenses
+	include ../sections/partners
+	include ../sections/request

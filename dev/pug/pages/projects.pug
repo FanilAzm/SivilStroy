@@ -1,0 +1,26 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Наши проекты';
+	- var pageClass = 'projects-page';
+
+block content
+	section.head-block
+		.container
+			.head-block__content
+				h1.h1 Наши проекты
+				.js-slide__content.js-slide__content_white
+					.projects-info
+						p.projects-info__count 50
+						p.projects-info__title cотрудников
+					.projects-info
+						p.projects-info__count 1000
+						p.projects-info__title установленных камер
+					.projects-info
+						p.projects-info__count 20
+						p.projects-info__title лет опыта
+					.projects-info
+						p.projects-info__count 500
+						p.projects-info__title довольных клиентов
+	include ../sections/projects
+	include ../sections/request

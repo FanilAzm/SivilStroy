@@ -112,6 +112,38 @@ $(document).ready(function(){
     prevArrow: '.licenses-slider__prev'
   });
 
+  $('.sets-slider').slick({
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ],
+    nextArrow: '.sets-slider__next',
+    prevArrow: '.sets-slider__prev',
+  });
+
+  $('.reviews-slider').slick({
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    nextArrow: '.reviews-slider__next',
+    prevArrow: '.reviews-slider__prev'
+  });
+
   $(document).mouseup(function(e){
     if ($('.header-nav__menu-item').has(e.target).length === 0){
       $('.header-nav__menu-item').removeClass('active');
