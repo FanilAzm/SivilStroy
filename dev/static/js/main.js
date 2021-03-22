@@ -144,11 +144,12 @@ $(document).ready(function(){
     prevArrow: '.reviews-slider__prev'
   });
 
-  $('.completed-popup__slide').slick({
+  // Слайдер в попап
+
+  const slickSlide = $('.completed-popup__slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
     asNavFor: '.completed-popup__nav'
   });
   const slickNav = $('.completed-popup__nav').slick({
@@ -156,29 +157,36 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     asNavFor: '.completed-popup__slide',
-    focusOnSelect: true
+    nextArrow: '.completed-popup__next',
+    prevArrow: '.completed-popup__prev'
   });
 
-  $('.popup').click(function(){
-    // slickSlide.slick('refresh');
-    slickNav.slick('refresh');
-  });
+  // Модальное окно
 
-  $('.popup').magnificPopup({
-    type: 'inline',
+  function openModal(btn, selector) {
+    $(btn).click(function(){
+      slickSlide.slick('refresh');
+      slickNav.slick('refresh');
+    });
+  
+    $(btn).click(function(){
+      $(selector).addClass('active');
+      $('body').addClass('popup-open');
+    });
+    $('.popup-close').click(function(){
+      $(selector).removeClass('active');
+      $('body').removeClass('popup-open');
+    });
+  }
 
-    fixedContentPos: false,
-    fixedBgPos: true,
+  openModal('.completed-popup__btn', '.completed-popup');
+  openModal('.sets-popup__btn', '.sets-popup');
+  openModal('.services-popup__btn', '.services-popup');
+  openModal('.solutions-popup__btn', '.solutions-popup');
+  openModal('.section-form-popup__btn', '.section-form-popup');
+  openModal('.sent-success__btn', '.sent-success-popup');
 
-    overflowY: 'auto',
-
-    closeBtnInside: true,
-    preloader: false,
-    
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-slide-bottom'
-  });
+  // Нажатие не по элементу, закрывает его
 
   $(document).mouseup(function(e){
     if ($('.header-nav__menu-item').has(e.target).length === 0){
@@ -188,19 +196,29 @@ $(document).ready(function(){
       $('.new-select').removeClass('on');
       $('.new-select__list').css({'display':'none'});
     }
+    if ($('.popup').has(e.target).length === 0){
+      $('.popup').removeClass('active');
+      $('body').removeClass('popup-open');
+    }
   });
+
+  // Выпадающее меню навигации
 
   $('.header__btn').click(function(e){
     $(this).closest('.header-nav__menu-item').toggleClass('active');
     $(this).closest('.header-nav__menu-item').siblings().removeClass('active');
   });
 
-  $('.services-item button').click(function(e){
-    let target = $(e.target);
-    if(target.closest('div').attr('id', 'services-btn')) {
-      $(this).closest('.services-item__wrap').addClass('active');
-    }
-  });
+  // 
+
+  // $('.services-item button').click(function(e){
+  //   let target = $(e.target);
+  //   if(target.closest('div').attr('id', 'services-btn')) {
+  //     $(this).closest('.services-item__wrap').addClass('active');
+  //   }
+  // });
+
+  // 
 
   $('#all-licenses').click(function(){
     $('.licenses').addClass('active');

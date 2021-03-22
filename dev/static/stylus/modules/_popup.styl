@@ -1,31 +1,163 @@
-#completed-popup
+.popup
+    display none
+    align-items center
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    overflow auto
+    background-color rgb(0,0,0)
+    background-color rgba(0,0,0,.4)
+    cursor pointer
+    z-index 10
+    &.active
+        display flex
+
+.popup__content
+    position relative
     display flex
     width 1036px
     height 485px
     margin 0 auto
     padding 30px
     border-radius 5px
+    overflow hidden
     background-color actionColor
     color #ffffff
+    cursor auto
     .project-item__text
+        display flex
+        flex-direction column
+        justify-content center
         width 500px
-    .slick-initialized
-        .slick-slide
-            display inline-block !important
     .slick-prev
         left 0
     .slick-next
         right 0
 
-.completed-popup__slider
-    width 448px
+.popup__content_white
+    flex-direction column
+    background-color #fff
+    color mainTextColor
 
-.completed-popup__slide
-    border-radius 5px
-    overflow hidden
+.popup__content_black
+    width 1530px
+    padding 0
+
+.popup-close
+    position absolute
+    top 15px
+    right 15px
+    width 30px
+    height 30px
+    sprite($s-close)
+    cursor pointer
+
+.popup-close_black
+    sprite($s-close-black)
+
+
+.completed-popup__slider
+    position relative
+    width 448px
+    .completed-popup__next,
+    .completed-popup__prev
+        border-color #ffffff
+        svg
+            fill #ffffff
+        &:hover
+            border-color #000
+            svg
+                fill #000000
+    .completed-popup__next
+        right 0
+    .completed-popup__prev
+        left 0
 
 .completed-popup__slide-img
-    //
+    height 340px
+    margin-bottom 30px
+    img
+        width 100%
+        height 100%
+
+.completed-popup__nav
+    width 289px
+    margin 0 auto
+    .slick-slide
+        margin-left 10px
+        margin-right 10px
 
 .completed-popup__nav-img
-    //
+    width 61px !important
+    height 55px
+    border-radius 5px
+    overflow hidden
+    img
+        width 100%
+        height 100%
+    
+
+        
+.sets-popup
+    .popup__content
+        height auto
+    .sets-item__block
+        margin-bottom 0
+    .sets-item__info
+        flex-direction row
+        justify-content flex-start
+        margin-left 0
+    .sets-item__info-block
+        p
+            margin 0 30px
+    .sets-item__info-wrap
+        display flex
+        flex-direction column
+        margin-left 30px
+    .sets-item__action
+        margin 30px 0
+
+.services-popup
+    .services-item_text
+        padding 30px
+    .services-item_img
+        img
+            height 100%
+
+.solutions-popup
+    .popup__content
+        flex-direction row
+        height auto
+    .solutions-item__img
+        img
+            width 430px
+            height 100%
+    .solutions-item__text
+        margin-left 30px
+
+
+.section-form-popup
+    .popup__content
+        width 655px
+        height auto
+        padding 60px
+        background-color rgba(255, 255, 255, 0.75)
+    .h4
+        margin-bottom 45px
+    .section-form__box
+        flex-direction column
+    .section-form__input
+        margin-bottom 45px
+
+.sent-success-popup
+    .popup__content
+        flex-direction column
+        align-items center
+        width 528px
+        height auto
+        background linear-gradient(93.58deg, #1A777E 0%, #1A98A6 99.22%)
+    .sent-success-popup__title
+        margin-bottom 30px
+        font-family boldFont
