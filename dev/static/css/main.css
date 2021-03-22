@@ -3025,6 +3025,7 @@ button {
 .section-slider .slick-dots {
   position: absolute;
   bottom: -89px;
+  left: 0;
 }
 .section-slider .slick-dots li {
   background-color: rgba(0,0,0,0.15);
@@ -3894,21 +3895,41 @@ button {
 .solutions-popup .solutions-item__text {
   margin-left: 30px;
 }
-.section-form-popup .popup__content {
+.section-form-popup .popup__content,
+.calculate-form-popup .popup__content {
   width: 655px;
   height: auto;
   padding: 60px;
   background-color: rgba(255,255,255,0.75);
 }
-.section-form-popup .h4 {
+.section-form-popup .h4,
+.calculate-form-popup .h4 {
   margin-bottom: 45px;
 }
-.section-form-popup .section-form__box {
+.section-form-popup .section-form__box,
+.calculate-form-popup .section-form__box {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.section-form-popup .section-form__input {
+.section-form-popup .section-form__input,
+.calculate-form-popup .section-form__input {
   margin-bottom: 45px;
+}
+.calculate-form-popup .h4 {
+  margin-bottom: 30px;
+}
+.calculate-order-list {
+  margin-bottom: 45px;
+}
+.calculate-order-list li {
+  margin-bottom: 15px;
+}
+.calculate-order-list span {
+  margin-left: 15px;
+}
+.calculate-order-list__title {
+  margin-bottom: 12px;
+  font-family: "Montserrat-Bold", Arial, sans-serif;
 }
 .sent-success-popup .popup__content {
   -ms-flex-direction: column;

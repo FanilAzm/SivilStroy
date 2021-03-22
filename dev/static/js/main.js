@@ -169,7 +169,8 @@ $(document).ready(function(){
       slickNav.slick('refresh');
     });
   
-    $(btn).click(function(){
+    $(btn).click(function(e){
+      e.preventDefault();
       $(selector).addClass('active');
       $('body').addClass('popup-open');
     });
@@ -184,6 +185,7 @@ $(document).ready(function(){
   openModal('.services-popup__btn', '.services-popup');
   openModal('.solutions-popup__btn', '.solutions-popup');
   openModal('.section-form-popup__btn', '.section-form-popup');
+  openModal('.calculate-form-popup__btn', '.calculate-form-popup');
   openModal('.sent-success__btn', '.sent-success-popup');
 
   // Нажатие не по элементу, закрывает его
