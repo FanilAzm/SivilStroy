@@ -144,6 +144,42 @@ $(document).ready(function(){
     prevArrow: '.reviews-slider__prev'
   });
 
+  $('.completed-popup__slide').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.completed-popup__nav'
+  });
+  const slickNav = $('.completed-popup__nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: '.completed-popup__slide',
+    focusOnSelect: true
+  });
+
+  $('.popup').click(function(){
+    // slickSlide.slick('refresh');
+    slickNav.slick('refresh');
+  });
+
+  $('.popup').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+    
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-slide-bottom'
+  });
+
   $(document).mouseup(function(e){
     if ($('.header-nav__menu-item').has(e.target).length === 0){
       $('.header-nav__menu-item').removeClass('active');

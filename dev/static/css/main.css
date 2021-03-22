@@ -3709,6 +3709,36 @@ button {
 .phone-mobile:hover svg {
   fill: #1a98a6;
 }
+#completed-popup {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1036px;
+  height: 485px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #1a98a6;
+  color: #fff;
+}
+#completed-popup .project-item__text {
+  width: 500px;
+}
+#completed-popup .slick-initialized .slick-slide {
+  display: inline-block !important;
+}
+#completed-popup .slick-prev {
+  left: 0;
+}
+#completed-popup .slick-next {
+  right: 0;
+}
+.completed-popup__slider {
+  width: 448px;
+}
+.completed-popup__slide {
+  border-radius: 5px;
+  overflow: hidden;
+}
 .head-block {
   background-image: url("../../static/img/content/video-bg.png");
   background-size: cover;
@@ -4212,9 +4242,11 @@ button {
 .request-item {
   position: relative;
   width: 60%;
+  height: 100%;
 }
 .request-item__img img {
   width: 100%;
+  height: 100%;
 }
 .request-item__text {
   position: absolute;
