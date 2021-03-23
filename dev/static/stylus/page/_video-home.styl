@@ -23,12 +23,17 @@
 
 	.request-items
 		flex-direction row-reverse
+	.request-item
+		width 57%
 	.request-form
+		width 43%
 		padding 60px
 		.section-form__title
 			min-width 182px
 		.section-form__box
 			margin-bottom 18px
+			&:last-child
+				margin-bottom 0
 		.section-form__content
 			width 292px
 			.section-form__input
@@ -52,6 +57,7 @@
 		margin-bottom 60px
 
 	.completed-item__block
+		height 315px
 		p
 			font-family mainFont
 
@@ -110,13 +116,12 @@
 	overflow hidden
 
 .reviews-item__img
-	width 25%
+	width 26%
 	img
 		width 100%
-		height 100%
 
 .reviews-item__text
-	width 75%
+	width 74%
 	padding 77px 60px
 	background-color grayBgColor
 

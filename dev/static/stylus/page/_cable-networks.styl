@@ -12,24 +12,40 @@
 	display flex
 	justify-content space-between
 
-.cable-networks__table
-	margin-bottom 34px
-	thead
+.cable-networks__titles
+	display flex
+	justify-content space-between
+
+.cable-networks__list
+	width 573px
+
+.cable-networks__titles
+	margin-bottom 30px
+	p
 		font-family boldFont
-		&:after
-			content ''
-			display table-row
-			height 30px
-	tbody
-		td
-			padding-right 45px
-			border-top 10px solid transparent
-			border-bottom 10px solid transparent
-			&:last-child
-				padding-right 0
-	
+		&:first-child
+			min-width 282px
+		&:last-child
+			margin-right 50px
+
+
+.cable-networks__list-item
+	display flex
+	justify-content space-between
+	align-items center
+	width 100%
+	margin-bottom 16px
 	.section-form__title
 		min-width 282px
+	&:last-child
+		margin-bottom 0
+
+.cable-networks__endprice
+	margin-top 30px
+
+.cable-networks__sum
+	margin-left 50px
+	font-family mainFont
 
 .cable-networks__form
 	width 531px

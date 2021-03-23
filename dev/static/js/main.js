@@ -121,15 +121,9 @@ $(document).ready(function(){
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 481,
-        settings: {
           slidesToShow: 1,
         }
-      },
+      }
     ],
     nextArrow: '.sets-slider__next',
     prevArrow: '.sets-slider__prev',

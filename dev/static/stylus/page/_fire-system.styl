@@ -16,6 +16,7 @@
 	border-radius 5px
 	img
 		width 100%
+		height 100%
 
 .engineering-item__content
 	display flex
@@ -50,8 +51,14 @@
 	margin-top 25px
 	font-family boldFont
 
+.engineering-item__text
+	margin 30px 0
+
 .engineering-item__descr
+	margin-bottom 15px
 	font-size 15px
+	&:last-child
+		margin-bottom 0
 
 
 .documents-item
@@ -62,27 +69,31 @@
 	display flex
 	flex-direction column
 	align-items flex-start
-	width 60%
+	width 57%
 	.btn
 		width 390px
 
-.documents-item__img
+.documents-item__images
 	position relative
 	width 383px
 
+.documents-item__img
+	width 100%
+
 .documents-item__img_rotate
-	width 270px
+	width 286px
 	position absolute
-	top 60px
+	top 55px
 	left 67%
 	transform rotate(30deg)
 	z-index -1
 
 .documents-item__text
-	margin 15px 0 60px
+	margin 15px 0 20px
 
 .documents-item__descr
 	margin-bottom 30px
+	font-size 15px
 	&:last-child
 		margin-bottom 0
 

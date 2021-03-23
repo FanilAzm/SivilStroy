@@ -21,6 +21,7 @@
 	display flex
 	flex-direction column
 	align-items center
+	width 32%
 	padding 30px
 	padding-bottom 60px
 	background linear-gradient(93.58deg, #1A777E 0%, #1A98A6 99.22%)
@@ -30,16 +31,23 @@
 		display flex
 		align-self start
 
-.tariffs-item__table
-	width 430px
-	margin 30px 0 35px
-	tbody
-		td
-			padding 7px 0
-			&:first-child
-				padding-right 53px
-			&:last-child
-				padding-left 38px
+.tariffs-list
+	width 100%
+	margin 30px 0 45px
+
+.tariffs-list__item
+	display flex
+	justify-content space-between
+	align-items center
+	margin-bottom 15px
+	&:last-child
+		margin-bottom 0
+
+.tariffs-list__item-title
+	width 222px
+
+.tariffs-list__item-count
+	width 87px
 
 .check-icon
 	width 30px
