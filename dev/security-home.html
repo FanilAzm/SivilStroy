@@ -118,7 +118,7 @@
                 <div class="section-form__box">
                   <label class="section-form__title">Площадь объекта, м2</label>
                   <div class="section-form__content">
-                    <input class="section-form__input" type="text" placeholder="100">
+                    <input class="section-form__input" type="count" placeholder="100">
                   </div>
                 </div>
                 <div class="section-form__box">
@@ -541,9 +541,9 @@
                   </div>
                 </div>
                 <div class="section-form__info">
-                  <input class="section-form__input" type="text" placeholder="Ваше имя">
-                  <input class="section-form__input" type="text" placeholder="Ваш e-mail">
-                  <input class="section-form__input" type="text" placeholder="Ваш номер телефона">
+                  <input class="section-form__input inputText" type="text" placeholder="Ваше имя" required>
+                  <input class="section-form__input inputEmail" type="email" placeholder="Ваш e-mail" required>
+                  <input class="section-form__input inputPhone" type="tel" placeholder="Ваш номер телефона" required>
                 </div>
                 <button class="btn sent-success__btn" type="submit">Получить коммерческое предложение</button>
                 <button class="btn btn-mobile sent-success__btn" type="submit">Получить КП</button>
@@ -640,17 +640,17 @@
           </div>
         </div>
         <div class="popup section-form-popup">
-          <div class="popup__content popup__content_white">
+          <form class="popup__content popup__content_white">
             <div class="popup-close popup-close_black"></div>
             <h4 class="h4">Заполните форму и мы Вам перезвоним</h4>
-            <input class="section-form__input" type="text" placeholder="Ваше имя">
-            <input class="section-form__input" type="text" placeholder="Ваш e-mail">
-            <input class="section-form__input" type="text" placeholder="Ваш номер телефона">
+            <input class="section-form__input inputText" type="text" placeholder="Ваше имя" required>
+            <input class="section-form__input inputEmail" type="email" placeholder="Ваш e-mail" required>
+            <input class="section-form__input inputPhone" type="tel" placeholder="Ваш номер телефона" required>
             <button class="btn sent-success__btn" type="submit">Оставить заявку</button>
-          </div>
+          </form>
         </div>
         <div class="popup calculate-form-popup">
-          <div class="popup__content popup__content_white">
+          <form class="popup__content popup__content_white">
             <div class="popup-close popup-close_black"></div>
             <h4 class="h4">Заполните форму и мы Вам перезвоним</h4>
             <p class="calculate-order-list__title">Ваш заказ:</p>
@@ -660,11 +660,11 @@
               <li>Уровень качества видео:<span>Full HD</span></li>
               <li>Уровень качества видео:<span>Full HD</span></li>
             </ul>
-            <input class="section-form__input" type="text" placeholder="Ваше имя">
-            <input class="section-form__input" type="text" placeholder="Ваш e-mail">
-            <input class="section-form__input" type="text" placeholder="Ваш номер телефона">
+            <input class="section-form__input inputText" type="text" placeholder="Ваше имя" required>
+            <input class="section-form__input inputEmail" type="email" placeholder="Ваш e-mail" required>
+            <input class="section-form__input inputPhone" type="tel" placeholder="Ваш номер телефона" required>
             <button class="btn sent-success__btn" type="submit">Оставить заявку</button>
-          </div>
+          </form>
         </div>
         <div class="popup sent-success-popup">
           <div class="popup__content">

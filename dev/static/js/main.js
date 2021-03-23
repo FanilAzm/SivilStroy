@@ -236,6 +236,8 @@ $(document).ready(function(){
     $(this).closest('.security-item').siblings().removeClass('active');
   });
 
+  // Стилизация селекта
+
   $('.select').each(function() {
     const _this = $(this),
         selectOption = _this.find('option'),
@@ -289,7 +291,9 @@ $(document).ready(function(){
             selectList.slideUp(duration);
         }
     });
-});
+  });
+
+  //
 
   $('.nav-mobile').click(function(){
     $(this).toggleClass('active');
@@ -300,7 +304,37 @@ $(document).ready(function(){
     $('.header-nav__tablet').removeClass('active');
   });
 
+  // Валидация форм
 
+  $('form').on('input', function(e){
+    const target = e.target;
+    const inputPhone = document.querySelectorAll('input[type=tel]'),
+          inputText = document.querySelectorAll('input[type=text]'),
+          inputEmail = document.querySelectorAll('input[type=email]');
+
+    const validateForm = (input, inputType, pattern) => {
+      if(target.matches(inputType)){
+        input.forEach((item) => {
+          item.addEventListener('change', () => {
+            if(item.value != item.value.match(pattern)){
+              item.value = '';
+              item.style.border = '1px solid #FF0000';
+              item.classList.add('validateError');
+            } else {
+              item.style.border = '1px solid #115B64';
+              item.classList.remove('validateError');
+            }
+          });
+        });
+      }
+    }
+
+    validateForm(inputPhone, 'input[type=tel]', /^\+?[78]\d{10}$/);
+    validateForm(inputText, 'input[type=text]', /^[А-Яа-яЁё\s*]+$/);
+    validateForm(inputEmail, 'input[type=email]', /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/);
+  });
+
+  //
 
   $('.scroll-link').click(function(event) {
     if (

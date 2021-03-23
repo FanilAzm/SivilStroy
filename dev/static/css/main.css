@@ -3264,6 +3264,12 @@ button {
 .section-form__input:focus::placeholder {
   color: #000;
 }
+.section-form__input.validateError:-ms-input-placeholder {
+  color: #f00;
+}
+.section-form__input.validateError::placeholder {
+  color: #f00;
+}
 .section-form__input_count {
   height: 30px;
   width: 45px;

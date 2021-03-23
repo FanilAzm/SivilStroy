@@ -114,7 +114,7 @@ block content
 									path(d='M362.671,490.787c-2.831,0.005-5.548-1.115-7.552-3.115L120.452,253.006c-4.164-4.165-4.164-10.917,0-15.083L355.119,3.256\
 									c4.093-4.237,10.845-4.354,15.083-0.262c4.237,4.093,4.354,10.845,0.262,15.083c-0.086,0.089-0.173,0.176-0.262,0.262\
 									L143.087,245.454l227.136,227.115c4.171,4.16,4.179,10.914,0.019,15.085C368.236,489.664,365.511,490.792,362.671,490.787z')
-							input(type="text" value="1").section-form__input_count
+							input(type="count" value="1").section-form__input_count
 							button.section-form__btn
 								svg(version='1.1' x='0px' y='0px' viewbox='0 0 490.8 490.8' style='enable-background:new 0 0 490.8 490.8;' xml:space='preserve')
 									path(d='M135.685,3.128c-4.237-4.093-10.99-3.975-15.083,0.262c-3.992,4.134-3.992,10.687,0,14.82\
@@ -147,9 +147,9 @@ block content
 						p Ориентировочная стоимость проекта:
 						span.request-form__sum 123 456 руб
 					.section-form__info
-						input(type="text" placeholder="Ваше имя").section-form__input
-						input(type="text" placeholder="Ваш e-mail").section-form__input
-						input(type="text" placeholder="Ваш номер телефона").section-form__input
+						input(type="text" placeholder="Ваше имя" required).section-form__input.inputText
+						input(type="email" placeholder="Ваш e-mail" required).section-form__input.inputEmail
+						input(type="tel" placeholder="Ваш номер телефона" required).section-form__input.inputPhone
 					button(type="submit").btn.calculate-form-popup__btn Получить коммерческое предложение
 					button(type="submit").btn.btn-mobile.calculate-form-popup__btn Получить КП
 	section.completed.section-margin
