@@ -38,7 +38,7 @@ $(document).ready(function(){
     dots: true,
     responsive: [
       {
-        breakpoint: 769,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
         }
@@ -79,7 +79,7 @@ $(document).ready(function(){
     dots: true,
     responsive: [
       {
-        breakpoint: 769,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 1,
         }
@@ -95,6 +95,12 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
       {
         breakpoint: 769,
         settings: {
@@ -119,7 +125,13 @@ $(document).ready(function(){
     dots: true,
     responsive: [
       {
-        breakpoint: 769,
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
         }
@@ -223,15 +235,25 @@ $(document).ready(function(){
     $('.licenses').addClass('active');
   });
 
-  $('.security-item .btn-action').click(function(){
-    $(this).closest('.security-items').css({'min-height':'745px'});
-    $(this).closest('.security-item').addClass('active');
-  });
-
-  $('.security-item__img').click(function(){
-    $(this).closest('.security-item').addClass('active');
-    $(this).closest('.security-item').siblings().removeClass('active');
-  });
+  function hideSecurityItem(btn) {
+    $(btn).click(function(){
+      $(this).closest('.security-items').css({'height':'745px'});
+      $(this).closest('.security-item').addClass('active');
+      $(this).closest('.security-item').siblings().removeClass('active');
+      $(this).closest('.security-item').siblings().children('.security-item__visible').css({'display':'none'});
+      if ($(window).width() <= '1440'){
+        $(this).closest('.security-items').css({'height':'700px'});
+      }
+      if ($(window).width() <= '1240'){
+        $(this).closest('.security-items').css({'height':'680px'});
+      }
+      if ($(window).width() <= '1024'){
+        $(this).closest('.security-items').css({'height':'650px'});
+      }
+    });
+  }
+  hideSecurityItem('.security-item .btn-action');
+  hideSecurityItem('.security-item__img');
 
   // Стилизация селекта
 

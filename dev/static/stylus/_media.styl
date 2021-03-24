@@ -1,7 +1,6 @@
 @media screen and (max-width 1560px)
 	.header-nav__menu
-		width 83%
-		margin-left 58px
+		justify-content flex-start
 		
 	.section-slider__prev
 		left 27%
@@ -33,14 +32,6 @@
 @media screen and (max-width 1440px)
 	.h1
 		font-size 58px
-	.header-nav__menu
-		margin-left 38px
-		li
-			padding 10px
-
-	.header__contact
-		.contact-phone
-			margin-left 38px
 
 	.section-slider__prev
 		left 26%
@@ -52,25 +43,38 @@
 	.licenses-slider__prev
 		left 16%
 
+	.js-slide__text
+		p
+			width auto
 	.head-form
 		padding 40px
 		height auto
 	.section-form__title
-		width 40%
+		width 45%
 	.section-form__content
 		width 50%
 	.section-form
 		padding 40px
 
+	.advantages-item__descr
+		width auto
+
+	.section-form
+		.section-form__input
+			width 35%
+			&:nth-child(3)
+				width 40%
+
 	.completed-slider
 		padding 40px
+
+	.licenses-item
+		p
+			width auto
 
 	.request-form
 		.section-form__input
 			margin-bottom 30px
-
-	// control-page
-	
 
 	// popup
 	.popup__content
@@ -84,11 +88,53 @@
 		.completed-popup__nav
 			height 50px
 
-@media screen and (max-width 1340px)
-	
+	// control-page
+	.service-item__text
+		flex-direction column
+	.service-item__descr
+		margin 30px 0
 
-	.header-nav__menu
-		width 90%
+	// fire-page
+	.engineering-item__content
+		padding 30px
+	.documents-item__content
+		width 45%
+
+	// security-page
+	.smartphone-control-item__img
+		&:before
+			top 30%
+			transform translate(-50%,-30%)
+	// cable-page
+	.cable-networks-page
+		.h1
+			font-size 52px
+		.js-slide__content
+			padding 40px
+	.cable-networks__sum
+		display block
+		margin 0
+	// video-home
+	.video-home-page
+		.request-form
+			padding 40px
+		.request-item__text
+			left 30px
+	.reviews-item__img
+		width 35%
+	.reviews-item__text
+		width 65%
+	.sets-item__img
+		max-width 100%
+	.sets-item__info
+		flex-direction row
+		justify-content space-between
+		flex-wrap wrap
+	//security-home
+	.tariffs-list__item-count
+		text-align right
+
+@media screen and (max-width 1340px)
 
 	.section-slider__prev
 		left 24%
@@ -99,101 +145,68 @@
 		right 14%
 	.licenses-slider__prev
 		left 14%
-		
-@media screen and (max-width 768px)
-	.container
-		width 94%
 
+	.cable-networks-page
+		.h1
+			font-size 48px
+
+	.video-home-page
+		.section-form__text
+			flex-direction column
+
+@media screen and (max-width 1240px)
 	.h1
-		font-size 50px
+		font-size 52px
+		line-height normal
 
+	.head-form
+		.section-form__info
+			margin-top 40px
+	.section-form__info
+		.section-form__input
+			margin-bottom 30px
+
+	.section-form__box
+		margin-bottom 20px
+	
+	.request-form
+		padding 30px
+		.section-form__input
+			margin-bottom 20px
+
+	// control-page
+	.checkbox
+		padding-left 40px
+		font-size 14px
+	// cable-page
+	.cable-networks__form
+		width 35%
+
+@media screen and (max-width 1024px)
+	.h1
+		font-size 48px
 	.hide-tablet
 		display none
-
 	.header-nav__menu
 		display none
-
 	.header-nav__tablet
 		.header-nav__menu
 			display block
-
-	.head-block
-		background-position center 100px
-
-	.header__action
-		margin-right 76px
-	.header__contact
-		.contact-phone
-			margin-left 80px
 	.nav-mobile
 		display block
-
-	.head-block__content
-		height 100%
-		padding-top 259px
-	.head-block__content
-		flex-direction column
-
-	.section-slider__prev
-		left 3%
-	.section-slider__next
-		right 3%
-
-	.head-form
-		width 100%
-		margin 46px 0 102px
+	.header__action
+		margin-right 76px
+	.slick-dots
+		width 90%
 	.head-block__slider
-		.slick-dots
-			bottom 3px
-	.js-slider
-		width 690px
-	.js-slider__next,
-	.js-slider__prev
-		bottom 13px
+		width 45%
+	.head-form
+		width 52%
+		.btn
+			display none
+		.btn-mobile
+			display block
 
-	.advantages-item
-		width 50%
-		&:nth-child(2),
-		&:nth-child(5)
-			width 50%
-		&:nth-child(3),
-		&:nth-child(4)
-			padding-top 60px
-			padding-bottom 60px
-		&:nth-child(-n+3)
-			padding-left 0
-		&:nth-last-child(-n+3)
-			padding-left 0
-		&:nth-child(3n+3)
-			border-top 1px solid rgba(0, 0, 0, 0.25)
-			border-right 1px solid rgba(0, 0, 0, 0.25)
-		&:nth-child(2n+2)
-			padding-left 15px
-			border-right none
-
-	.services
-		margin-top 95px
-	.services-items
-		flex-direction column
-		margin-top 59px
-	.services-item__wrap
-		flex-direction column
-		margin-bottom 30px
-		border-radius 5px
-		overflow hidden
-		&:nth-child(2n+2)
-			flex-direction column-reverse
-	.services-item
-		width 100%
-		height 411px
-	.services-item_text
-		padding 0 100px
-		padding-top 75px
-	.services-item_img
-		max-width 100%
-
-	.digit
-		margin-top 71px
 	.digit-items
 		flex-wrap wrap
 	.digit-item
@@ -201,41 +214,6 @@
 		&:nth-child(-n+2)
 			margin-bottom 60px
 
-	.section-form
-		min-height 630px
-		padding-left 32px
-		padding-right 25px
-		background-image none
-		.section-form__box
-			display flex
-			flex-direction column
-			align-items flex-start
-			justify-content space-between
-			.section-form__input
-				&:nth-child(3)
-					width 250px
-		.btn
-			width 250px
-	.section-form__img
-		display block
-	.section-form__img_tablet
-		display block
-	.section-form__img_mobile
-		display none
-
-	.solutions-items
-		padding-bottom 83px
-	.solutions-item	
-		width 330px
-		padding 28px
-		img
-			min-height 200px
-	.solutions-item__descr
-		margin-bottom 30px
-	
-	.completed-slider
-		padding-left 30px
-		padding-right 30px
 	.completed-item__block_max
 		width 100%
 	.completed-item__block_min
@@ -248,41 +226,13 @@
 		&:first-child,
 		&:nth-child(4n+4)
 			background-color grayBgColor
-	
-	.comments-items
-		padding-bottom 80px
-	.comments-item
-		padding 35px 30px
-	.comments-item__title
-		margin-bottom 40px
-	.comments-item__text
-		width 60%
-		margin-left 40px
 
-	.licenses
-		.section-slider__next,
-		.section-slider__prev
-			bottom 15px
-		.section-slider__next
-			right 7%
-		.section-slider__prev
-			left 7%
 	.licenses-items
-		padding-left 30px
-		padding-right 30px
-		margin-bottom 0
 		border-radius 5px 5px 0 0
-	.licenses-item
-		p
-			width 191px
-			margin-top 27px
-	.licenses-item__img
-		img
-			min-height 265px
 	.licenses-action
 		position static
 		width 100%
-		height 200px
+		height 150px
 		background-image none
 		bottom -170px
 		left 14px
@@ -290,37 +240,33 @@
 		border-radius 0 0 5px 5px
 	.licenses-action__content
 		left 32px
-		bottom 64px
+		bottom 30px
 		right auto
 		p 
 			width auto
-	.licenses-slider__next
-		right 1%
-	.licenses-slider__prev
-		left 1%
+	.licenses-items
+		.licenses-item[data-slick-index="3"]
+			opacity 1
 
-	.request
-		margin-bottom 90px !important
-	.request-items
-		flex-direction column
 	.request-item
-		width 100%
-	.request-item__img
-		img
-			min-height 528px
+		width 50%
+		height auto
 	.request-item__text
-		bottom 47px
-		left 31px
+		left 30px
+		bottom 30px
+	.request-item__img
+		height 100%
 	.request-form
-		width 100%
-		padding 67px 60px
-
+		width 50%
+	.request-item__descr
+		width auto
 
 	.footer-content__top,
 	.footer-content__bottom
 		display none
 	.footer-content__tablet
 		display flex
+		justify-content space-around
 		.footer-block
 			width 432px
 		.footer-content__bottom
@@ -340,162 +286,14 @@
 		position relative
 
 	// control-page
-	.service-item__content
-		padding 30px
-	.service-item__price
-		display none
-	.service-item__price_tablet
-		display block
-		margin 20px 0
-
+	.stages-items
+		justify-content center
 	.stages-item
-		width 40%
-		margin-bottom 30px
-		&:last-child
-			margin-bottom 0
-
-	// fire-page
-	.js-slide__content_white
-		width 678px
-
-	.engineering-item
-		flex-direction column
-
-	.engineering-item__img
-		width 100%
-	.engineering-item__content
-		width 100%
-
-	.documents-item
-		flex-direction column
-	.documents-item__content
-		width 100%
-	.documents-item__text
-		margin 60px 0
-
-	// security-page
-	.security-items
-		flex-direction column
-		align-items center
-	.security-item
-		width 475px	
-		&.active
-			.security-item__hide
-				position relative
-				bottom auto
-				left 0
-				padding 0
-	
-	.smartphone-control-item
-		flex-direction column
-	.smartphone-control-item__img
-		width 70%
-		margin 0 auto
-		margin-bottom 60px
-	.smartphone-control-item__text
-		width 100%
-
-	// cable-page
-	.cable-networks-page
-		.head-block__content
-			height auto
-			padding-top 159px
-			padding-bottom 100px
-		.js-slide__content
-			width 690px
-			padding 30px
-		
-	.cable-networks__content
-		flex-direction column
-
-	.cable-networks__sum
-		display block
-		margin-top 15px
-		margin-left 0
-
-	.cable-networks__form
-		width 100%
-		margin-top 50px
-		.section-form__info
-			margin 30px 0
-
-	// video-home-page
-	.video-home-page
-		.head-block__slider
-			.slick-dots
-				margin-bottom 33px
-		.request-items
-			flex-direction column
-		.request-item
-			width 100%
-			order 2
-		.request-form
-			width 100%
-		.completed-items
-			flex-direction column
-		.completed-item
-			width 100%
-			margin-bottom 60px
-			&:last-child
-				margin-bottom 0
-		.completed-item__block
-			width 100%
-
-	.reviews-item
-		flex-direction column
-	.reviews-item__img
-		width 100%
-		height 337px
-		overflow hidden
-		img
-			transform translateY(-20px)
-	.reviews-item__text
-		width 100%
-		padding 30px
-
-
-	// security-home-page
-	.tariffs-items
-		flex-direction column
-	.tariffs-item
-		width 100%
-		margin-bottom 60px
-		&:last-child
-			margin-bottom 0
-	.tariffs-item__table
-		width 100%
-	.tariffs-item__table
-		tbody
-			td
-				&:first-child
-					padding 0
-			td
-				&:last-child
-					padding 0
-
-	// projects
-	.projects-page
-		.h1
-			font-size 72px
-		.js-slide__content
-			width 100%
-			flex-wrap wrap
-	.projects-info
-		width 35%
-
-	.project-item
-		flex-direction column
-		padding 20px
-	.project-item__img
-		margin-bottom 60px
-	.project-item__text
-		margin 0
+		width 30%
+		margin 10px
 
 
 	// popup
-	.popup
-		//
-
 	.popup__content
 		width 90%
 		margin 0 auto
@@ -551,6 +349,339 @@
 		.sets-item__block
 			flex-direction column
 		
+@media screen and (max-width 768px)
+	.container
+		width 94%
+
+	.head-block
+		background-position center 100px
+	
+	.header__contact
+		.contact-phone
+			margin-left 80px
+
+	.head-block__content
+		flex-direction column
+		height 100%
+		padding-top 200px
+
+	.section-slider
+		.slick-dots
+			width 75%
+			li 
+				width 20%
+	.section-slider__prev
+		left 3%
+	.section-slider__next
+		right 3%
+
+	.head-form
+		width 100%
+		margin 46px 0 102px
+	.head-block__slider
+		width 100%
+		padding-bottom 70px
+		.slick-dots
+			bottom 32px
+	.js-slider__next,
+	.js-slider__prev
+		bottom 13px
+
+	.advantages-item
+		width 50%
+		&:nth-child(2),
+		&:nth-child(5)
+			width 50%
+		&:nth-child(3),
+		&:nth-child(4)
+			padding-top 60px
+			padding-bottom 60px
+		&:nth-child(-n+3)
+			padding-left 0
+		&:nth-last-child(-n+3)
+			padding-left 0
+		&:nth-child(3n+3)
+			border-top 1px solid rgba(0, 0, 0, 0.25)
+			border-right 1px solid rgba(0, 0, 0, 0.25)
+		&:nth-child(2n+2)
+			padding-left 15px
+			border-right none
+
+	.services
+		margin-top 95px
+	.services-items
+		flex-direction column
+		margin-top 59px
+	.services-item__wrap
+		flex-direction column
+		margin-bottom 30px
+		border-radius 5px
+		overflow hidden
+		&:nth-child(2n+2)
+			flex-direction column-reverse
+	.services-item
+		width 100%
+		height 411px
+	.services-item_text
+		padding 0 100px
+		padding-top 75px
+	.services-item_img
+		max-width 100%
+
+	.digit
+		margin-top 71px
+	
+
+	.section-form
+		min-height 630px
+		padding-left 32px
+		padding-right 25px
+		background-image none
+		.section-form__box
+			display flex
+			flex-direction column
+			align-items flex-start
+			justify-content space-between
+			.section-form__input
+				&:nth-child(3)
+					width 250px
+		.btn
+			width 250px
+	.section-form__img
+		display block
+	.section-form__img_tablet
+		display block
+	.section-form__img_mobile
+		display none
+
+	.solutions-items
+		padding-bottom 83px
+	.solutions-item	
+		width 330px
+		padding 28px
+		img
+			min-height 200px
+	.solutions-item__descr
+		margin-bottom 30px
+	
+	.completed-slider
+		padding-left 30px
+		padding-right 30px
+
+	
+	
+	.comments-items
+		padding-bottom 80px
+	.comments-item
+		padding 35px 30px
+	.comments-item__title
+		margin-bottom 40px
+	.comments-item__text
+		width 60%
+		margin-left 40px
+
+	.licenses
+		.section-slider__next,
+		.section-slider__prev
+			bottom 15px
+		.section-slider__next
+			right 7%
+		.section-slider__prev
+			left 7%
+	.licenses-items
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 0
+	.licenses-item
+		p
+			width 191px
+			margin-top 27px
+	.licenses-item__img
+		img
+			min-height 265px
+	.licenses-action
+		height 200px
+	.licenses-action__content
+		bottom 64px
+	.licenses-slider__next
+		right 1%
+	.licenses-slider__prev
+		left 1%
+
+	.request
+		margin-bottom 90px !important
+	.request-items
+		flex-direction column
+	.request-item
+		width 100%
+	.request-item__img
+		img
+			min-height 528px
+	.request-item__text
+		bottom 47px
+		left 31px
+	.request-form
+		width 100%
+		padding 67px 60px
+
+	.footer-content__tablet
+		justify-content space-between
+
+	// control-page
+	.stages-items
+		justify-content space-between
+	.service-item__content
+		padding 30px
+	.service-item__price
+		display none
+	.service-item__price_tablet
+		display block
+		margin 20px 0
+
+	.stages-item
+		width 40%
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
+
+	// fire-page
+	.engineering-item
+		flex-direction column
+
+	.engineering-item__img
+		width 100%
+	.engineering-item__content
+		width 100%
+
+	.documents-item
+		flex-direction column
+	.documents-item__content
+		width 100%
+	.documents-item__text
+		margin 60px 0
+
+	// security-page
+	.security-items
+		flex-direction column
+		align-items center
+	.security-item
+		width 475px	
+		&.active
+			.security-item__hide
+				position relative
+				bottom auto
+				left 0
+				padding 0
+	
+	.smartphone-control-item
+		flex-direction column
+	.smartphone-control-item__img
+		width 70%
+		margin 0 auto
+		margin-bottom 60px
+	.smartphone-control-item__text
+		width 100%
+
+	// cable-page
+	.cable-networks-page
+		.head-block__content
+			height auto
+			padding-top 159px
+		.js-slide__content
+			padding 30px
+		
+	.cable-networks__content
+		flex-direction column
+
+	.cable-networks__sum
+		display block
+		margin-top 15px
+		margin-left 0
+
+	.cable-networks__form
+		width 100%
+		margin-top 50px
+		.section-form__info
+			margin 30px 0
+
+	// video-home-page
+	.video-home-page
+		.head-block__content
+			padding-bottom 50px
+		.head-block__slider
+			width 100%
+		.request-items
+			flex-direction column
+		.request-item
+			width 100%
+			order 2
+		.request-form
+			width 100%
+		.completed-items
+			flex-direction column
+		.completed-item
+			width 100%
+			margin-bottom 60px
+			&:last-child
+				margin-bottom 0
+		.completed-item__block
+			width 100%
+
+	.reviews-item
+		flex-direction column
+	.reviews-item__img
+		width 100%
+		height 337px
+		overflow hidden
+		img
+			transform translateY(-20px)
+	.reviews-item__text
+		width 100%
+		padding 30px
+
+
+	// security-home-page
+	.tariffs-items
+		flex-direction column
+	.tariffs-item
+		width 100%
+		margin-bottom 60px
+		&:last-child
+			margin-bottom 0
+	.tariffs-item__table
+		width 100%
+	.tariffs-item__table
+		tbody
+			td
+				&:first-child
+					padding 0
+			td
+				&:last-child
+					padding 0
+
+	// projects
+	.projects-page
+		.head-block__content
+			padding-bottom 100px
+		.h1
+			font-size 72px
+		.js-slide__content
+			width 100%
+			flex-wrap wrap
+	.projects-info
+		width 35%
+
+	.project-item
+		flex-direction column
+		padding 20px
+	.project-item__img
+		margin-bottom 60px
+	.project-item__text
+		margin 0
+
+
+	
+		
 			
 @media screen and (max-width 480px)
 	.hide-mobile
@@ -577,6 +708,8 @@
 	.btn-mobile
 		display block
 
+	.header__content
+		height 116px
 	.header__action
 		display none
 	.email-mobile,
@@ -587,9 +720,7 @@
 			width 100px
 	.header-nav
 		flex 0
-
-	.js-slider
-		width 400px
+		
 	.js-slide__text
 		p
 			width auto
@@ -601,7 +732,9 @@
 			margin 0 8px
 			&.slick-active
 				height 5px
-
+	
+	.head-block__content
+		padding-top 159px			
 	.head-form
 		height auto
 		padding 15px
@@ -804,10 +937,6 @@
 		align-items center
 
 	// control-page
-	.control-page
-		.js-slider
-			width 400px
-
 	.service-item
 		flex-direction column
 	.service-item__img
@@ -819,9 +948,6 @@
 		width 100%
 
 	// fire-page
-	.js-slide__content_white
-		width 400px
-
 	.engineering-item__content
 		padding 30px
 	.engineering-item__services
@@ -870,10 +996,6 @@
 
 
 	// cable-page
-	.cable-networks-page
-		.js-slide__content
-			width 400px
-
 	.cable-networks__list
 		width auto
 	.cable-networks__list-item
@@ -890,10 +1012,6 @@
 
 	// video-home-page
 	.video-home-page
-		.head-block__slider
-			width auto
-		.js-slide__content
-			width 100%
 		.js-slide__btn
 			button
 				margin 0
@@ -913,25 +1031,25 @@
 		.completed-item
 			margin-bottom 30px
 	
-	.sets-item__block
-		flex-direction column
-		margin-bottom 0
-	.sets-item__action
-		flex-direction column
-		align-items flex-start
-		p 
-			margin-bottom 15px
-	.sets-item__img
-		max-width 100%
-	.sets-item__info
-		flex-direction row
-		justify-content space-between
-		flex-wrap wrap
-		margin 15px 0
-	.sets-item__info-block
-		width 40%
-		p 
-			margin-left 10px
+	// .sets-item__block
+	// 	flex-direction column
+	// 	margin-bottom 0
+	// .sets-item__action
+	// 	flex-direction column
+	// 	align-items flex-start
+	// 	p 
+	// 		margin-bottom 15px
+	// .sets-item__img
+	// 	max-width 100%
+	// .sets-item__info
+	// 	flex-direction row
+	// 	justify-content space-between
+	// 	flex-wrap wrap
+	// 	margin 15px 0
+	// .sets-item__info-block
+	// 	width 40%
+	// 	p 
+	// 		margin-left 10px
 	
 	.reviews-item__text
 		padding 20px
