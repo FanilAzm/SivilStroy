@@ -463,6 +463,68 @@
 		margin-bottom 60px
 	.project-item__text
 		margin 0
+
+
+	// popup
+	.popup
+		//
+
+	.popup__content
+		width 90%
+		margin 0 auto
+		height 90%
+		overflow scroll
+		padding 15px
+
+	.popup__content_black
+		width 90%
+		margin 0 auto
+		height 90%
+		overflow scroll
+
+	.section-form-popup,
+	.calculate-form-popup
+		.popup__content
+			padding 30px
+		.section-form__info
+			margin-top 15px
+		.section-form__input
+			margin-bottom 15px
+
+	.services-popup
+		.popup__content
+			flex-direction column
+		.services-item
+			height auto
+
+	.solutions-popup
+		.popup__content
+			flex-direction column
+			height 100%
+		.solutions-item__text
+			margin-left 0
+		.solutions-item__img
+			height 500px
+			overflow hidden
+			img
+				width 100%
+				height auto
+				transform translateY(-80px)
+
+	.completed-popup
+		.popup__content
+			flex-direction column
+			.project-item__text
+				width auto
+				margin-top 30px
+		.completed-popup__slider
+			width 100%
+		.completed-popup__nav
+			height 50px
+
+	.sets-popup
+		.sets-item__block
+			flex-direction column
 		
 			
 @media screen and (max-width 480px)
@@ -892,6 +954,45 @@
 		margin 15px 0
 	.project-item__info
 		margin-bottom 15px
+
+
+	// popup
+	.popup
+		overflow scroll
+
+	.popup__content
+		width 90%
+		margin 0 auto
+
+	.popup__content_black
+		width 90%
+		margin 0 auto
+
+	.section-form-popup,
+	.calculate-form-popup
+		.popup__content
+			width 90%
+			margin 0 auto
+
+	.services-popup
+		.services-item
+			min-height auto
+
+	.sent-success-popup
+		.popup__content
+			width 90%
+			margin 0 auto
+			text-align center
+
+	.sets-popup
+		.popup__content
+			height 90%
+		.sets-item__info-block
+			width 50%
+			p
+				margin 0 10px
+		.sets-item__action
+			margin 15px 0
 
 @media screen and (max-width 750px)
 	/**/

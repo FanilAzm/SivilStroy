@@ -3808,6 +3808,7 @@ button {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  z-index: 20;
 }
 .popup-close_black {
   background-image: url("../img/sprite/sprite.png");
@@ -5920,6 +5921,73 @@ button {
   .project-item__text {
     margin: 0;
   }
+  .popup__content {
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+    overflow: scroll;
+    padding: 15px;
+  }
+  .popup__content_black {
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+    overflow: scroll;
+  }
+  .section-form-popup .popup__content,
+  .calculate-form-popup .popup__content {
+    padding: 30px;
+  }
+  .section-form-popup .section-form__info,
+  .calculate-form-popup .section-form__info {
+    margin-top: 15px;
+  }
+  .section-form-popup .section-form__input,
+  .calculate-form-popup .section-form__input {
+    margin-bottom: 15px;
+  }
+  .services-popup .popup__content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .services-popup .services-item {
+    height: auto;
+  }
+  .solutions-popup .popup__content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100%;
+  }
+  .solutions-popup .solutions-item__text {
+    margin-left: 0;
+  }
+  .solutions-popup .solutions-item__img {
+    height: 500px;
+    overflow: hidden;
+  }
+  .solutions-popup .solutions-item__img img {
+    width: 100%;
+    height: auto;
+    transform: translateY(-80px);
+  }
+  .completed-popup .popup__content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .completed-popup .popup__content .project-item__text {
+    width: auto;
+    margin-top: 30px;
+  }
+  .completed-popup .completed-popup__slider {
+    width: 100%;
+  }
+  .completed-popup .completed-popup__nav {
+    height: 50px;
+  }
+  .sets-popup .sets-item__block {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .hide-mobile {
@@ -6465,6 +6533,42 @@ button {
   }
   .project-item__info {
     margin-bottom: 15px;
+  }
+  .popup {
+    overflow: scroll;
+  }
+  .popup__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .popup__content_black {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section-form-popup .popup__content,
+  .calculate-form-popup .popup__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .services-popup .services-item {
+    min-height: auto;
+  }
+  .sent-success-popup .popup__content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sets-popup .popup__content {
+    height: 90%;
+  }
+  .sets-popup .sets-item__info-block {
+    width: 50%;
+  }
+  .sets-popup .sets-item__info-block p {
+    margin: 0 10px;
+  }
+  .sets-popup .sets-item__action {
+    margin: 15px 0;
   }
 }
 @media screen and (max-width: 320px) {

@@ -196,6 +196,9 @@ $(document).ready(function(){
       $('.popup').removeClass('active');
       $('body').removeClass('popup-open');
     }
+    if ($('.header-nav__tablet').has(e.target).length === 0){
+      $('.header-nav__tablet').removeClass('active');
+    }
   });
 
   // Выпадающее меню навигации
