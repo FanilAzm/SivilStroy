@@ -114,6 +114,11 @@
 	.cable-networks__sum
 		display block
 		margin 0
+	.stages-items
+		justify-content center
+	.stages-item
+		width 30%
+		margin 20px
 	// video-home
 	.video-home-page
 		.request-form
@@ -124,6 +129,7 @@
 		width 35%
 	.reviews-item__text
 		width 65%
+		padding 30px
 	.sets-item__img
 		max-width 100%
 	.sets-item__info
@@ -133,6 +139,10 @@
 	//security-home
 	.tariffs-list__item-count
 		text-align right
+	.smartphone-control-item
+		align-items center
+	.smartphone-control-item__img
+		width 35%
 
 @media screen and (max-width 1340px)
 
@@ -181,10 +191,12 @@
 	// cable-page
 	.cable-networks__form
 		width 35%
+	.stages-item
+			margin 10px
 
 @media screen and (max-width 1024px)
 	.h1
-		font-size 48px
+		font-size 46px
 	.hide-tablet
 		display none
 	.header-nav__menu
@@ -199,13 +211,21 @@
 	.slick-dots
 		width 90%
 	.head-block__slider
-		width 45%
+		width 50%
 	.head-form
-		width 52%
+		width 47%
+		padding 25px
 		.btn
 			display none
 		.btn-mobile
 			display block
+
+	.new-select
+		padding 15px
+		&:after
+			top 24px
+	.section-form__input
+		padding 15px
 
 	.digit-items
 		flex-wrap wrap
@@ -226,6 +246,32 @@
 		&:first-child,
 		&:nth-child(4n+4)
 			background-color grayBgColor
+
+	.section-form
+		min-height 630px
+		padding-left 32px
+		padding-right 25px
+		background-image none
+		.section-form__box
+			display flex
+			flex-direction column
+			align-items flex-start
+			justify-content space-between
+			width 40%
+		.section-form__input
+			width 100%
+			&:nth-child(3)
+				width 100%
+		.btn
+			width 100%
+	.section-form__wrap
+		justify-content space-around
+	.section-form__img
+		display block
+	.section-form__img_tablet
+		display block
+	.section-form__img_mobile
+		display none
 
 	.licenses-items
 		border-radius 5px 5px 0 0
@@ -285,13 +331,77 @@
 	.footer-info
 		position relative
 
-	// control-page
-	.stages-items
-		justify-content center
-	.stages-item
-		width 30%
-		margin 10px
+	// fire-page
+	.engineering-item
+		flex-direction column
+		align-items center
+	.engineering-item__img
+		width 70%
+	.engineering-item__content
+		width 70%
 
+	// security-page
+	.smartphone-control-item__img
+		width 40%
+		margin 0 auto
+		margin-bottom 60px
+		&:before
+			left 50%
+			transform translate(-44%,-40%)
+			background-image url(../../static/img/content/video/smartphone-logo-mob.png)
+	.smartphone-control-item__text
+		width 60%
+	.smartphone-control-item__link
+		flex-direction column
+		width auto
+		a 
+			margin-bottom 15px
+
+	// cable-page
+	.cable-networks-page
+		.js-slide__content
+			width 100%
+			padding 30px
+		.h1
+			font-size 42px
+	.cable-networks__list
+		width 543px
+
+	// video-home
+	.video-home-page
+		.head-block__slider
+			width 55%
+		.js-slide__btn
+			display flex
+			justify-content space-between
+			button
+				margin 0
+		.request-form
+			width 50%
+			padding 25px
+		.request-item
+			width 50%
+		.request-item__img
+			overflow hidden
+			img
+				transform translateX(-80px)
+
+	.reviews-item__img
+		width 40%
+	.reviews-item__text
+		width 60%
+
+	// project
+	.projects-page
+		.js-slide__content
+			width 100%
+	.project-item
+		flex-direction column
+		padding 20px
+	.project-item__img
+		margin-bottom 30px
+	.project-item__text
+		margin 0
 
 	// popup
 	.popup__content
@@ -302,14 +412,17 @@
 		padding 15px
 
 	.popup__content_black
-		width 90%
+		width 60%
 		margin 0 auto
 		height 90%
 		overflow scroll
+		.services-item_img
+			max-width 100%
 
 	.section-form-popup,
 	.calculate-form-popup
 		.popup__content
+			width 50%
 			padding 30px
 		.section-form__info
 			margin-top 15px
@@ -320,16 +433,18 @@
 		.popup__content
 			flex-direction column
 		.services-item
+			width 100%
 			height auto
 
 	.solutions-popup
 		.popup__content
 			flex-direction column
+			width 50%
 			height 100%
 		.solutions-item__text
 			margin-left 0
 		.solutions-item__img
-			height 500px
+			height 600px
 			overflow hidden
 			img
 				width 100%
@@ -338,6 +453,7 @@
 
 	.completed-popup
 		.popup__content
+			width 60%
 			flex-direction column
 			.project-item__text
 				width auto
@@ -430,29 +546,9 @@
 
 	.digit
 		margin-top 71px
-	
 
-	.section-form
-		min-height 630px
-		padding-left 32px
-		padding-right 25px
-		background-image none
-		.section-form__box
-			display flex
-			flex-direction column
-			align-items flex-start
-			justify-content space-between
-			.section-form__input
-				&:nth-child(3)
-					width 250px
-		.btn
-			width 250px
-	.section-form__img
-		display block
-	.section-form__img_tablet
-		display block
-	.section-form__img_mobile
-		display none
+	.section-form__wrap
+		justify-content space-between
 
 	.solutions-items
 		padding-bottom 83px
@@ -467,8 +563,6 @@
 	.completed-slider
 		padding-left 30px
 		padding-right 30px
-
-	
 	
 	.comments-items
 		padding-bottom 80px
@@ -581,6 +675,12 @@
 		margin-bottom 60px
 	.smartphone-control-item__text
 		width 100%
+	.smartphone-control-item__link
+		flex-direction row
+		a
+			margin-right 50px
+			&:last-child
+				margin-right 0
 
 	// cable-page
 	.cable-networks-page
@@ -620,7 +720,8 @@
 		.completed-items
 			flex-direction column
 		.completed-item
-			width 100%
+			width 70%
+			margin 0 auto
 			margin-bottom 60px
 			&:last-child
 				margin-bottom 0
@@ -634,6 +735,7 @@
 		height 337px
 		overflow hidden
 		img
+			height auto
 			transform translateY(-20px)
 	.reviews-item__text
 		width 100%
@@ -665,23 +767,28 @@
 			padding-bottom 100px
 		.h1
 			font-size 72px
+			line-height normal
 		.js-slide__content
 			width 100%
 			flex-wrap wrap
 	.projects-info
 		width 35%
-
-	.project-item
-		flex-direction column
-		padding 20px
 	.project-item__img
 		margin-bottom 60px
-	.project-item__text
-		margin 0
 
-
-	
-		
+	// popup
+	.section-form-popup,
+	.calculate-form-popup
+		.popup__content
+			width 80%
+	.popup__content_black
+		width 80%
+	.solutions-popup
+		.popup__content
+			width 80%
+	.completed-popup
+		.popup__content
+			width 80%
 			
 @media screen and (max-width 480px)
 	.hide-mobile
@@ -724,7 +831,9 @@
 	.js-slide__text
 		p
 			width auto
-
+	.section-slider
+		.slick-dots
+			width 60%
 	.slick-dots
 		li 
 			width 30px
@@ -757,6 +866,9 @@
 		margin-top 30px
 		.section-form__box
 			margin-bottom 30px
+	.section-form
+		.section-form__box
+			width 100%
 	
 	.advantages-item
 		width 100%
@@ -943,6 +1055,8 @@
 		width 100%
 	.service-item__content
 		width 100%
+	.service-item__descr
+		margin 0
 
 	.stages-item
 		width 100%
@@ -985,10 +1099,6 @@
 		width 80%
 		margin 0 auto
 		margin-bottom 30px
-		&:before
-			left 50%
-			transform translate(-44%,-40%)
-			background-image url(../../static/img/content/video/smartphone-logo-mob.png)
 	.smartphone-control-item__link
 		width auto
 		img
@@ -1000,12 +1110,18 @@
 		width auto
 	.cable-networks__list-item
 		flex-wrap wrap
+		.section-form__title
+			margin-bottom 0
+	.cable-networks__action
+		width 100%
 	.cable-networks__titles
 		p
 			&:first-child
 				min-width auto
 			&:nth-last-child(-n+2)
 				display none
+	.cable-networks__list-item-btn
+		margin 15px 0
 	.cable-networks__endprice
 		.h4
 			font-size 20px
@@ -1013,6 +1129,7 @@
 	// video-home-page
 	.video-home-page
 		.js-slide__btn
+			flex-direction column
 			button
 				margin 0
 				margin-bottom 30px
@@ -1026,30 +1143,30 @@
 				padding 20px
 			.section-form__input
 				margin-bottom 30px
+		.request-item__img
+			height 400px
+			img
+				width 100%
+				transform translateX(0)
 		.section-form__text
 			display none
 		.completed-item
+			width 100%
 			margin-bottom 30px
-	
-	// .sets-item__block
-	// 	flex-direction column
-	// 	margin-bottom 0
-	// .sets-item__action
-	// 	flex-direction column
-	// 	align-items flex-start
-	// 	p 
-	// 		margin-bottom 15px
-	// .sets-item__img
-	// 	max-width 100%
-	// .sets-item__info
-	// 	flex-direction row
-	// 	justify-content space-between
-	// 	flex-wrap wrap
-	// 	margin 15px 0
-	// .sets-item__info-block
-	// 	width 40%
-	// 	p 
-	// 		margin-left 10px
+
+	.sets-item__block
+		flex-direction column
+	.sets-item__img
+		img
+			width 100%
+	.sets-item__info
+		margin-left 0
+		margin-top 15px
+	.sets-item__action
+		flex-direction column
+		align-items flex-start
+		p 
+			margin-bottom 15px
 	
 	.reviews-item__text
 		padding 20px
@@ -1162,16 +1279,16 @@
 		margin 0
 	.btn
 		min-width 230px
+	.btn-action_black
+		font-size 16px
 	.section-descr
 		margin-top 31px
 
 	.section-slider
 		.slick-dots
-			bottom -55px
 			li
 				width 20px
 				margin 0 4px
-
 	.section-slider__prev
 		left 0%
 	.section-slider__next
@@ -1200,7 +1317,7 @@
 	
 
 	.head-block__content
-		width 250px
+		// width 250px
 		padding-top 177px
 	.js-slider
 		width 250px
@@ -1213,7 +1330,7 @@
 		bottom 29px
 	.head-block__slider
 		.slick-dots
-			bottom 23px
+			bottom 50px
 			li
 				width 20px
 				margin 0 4px
@@ -1273,9 +1390,6 @@
 			margin-top 80px
 		.slick-dotted.slick-slider
 			margin-bottom 0
-		.section-slider
-			.slick-dots
-				bottom -43px
 	.comments-items
 		padding-bottom 65px
 	.comments-item
@@ -1286,9 +1400,6 @@
 		font-size 16px
 		
 	.licenses
-		.section-slider
-			.slick-dots
-				bottom -39px
 		.section-slider__next,
 		.section-slider__prev
 			bottom 15px
@@ -1340,9 +1451,62 @@
 		right -15px
 		
 
+	//control
+	.service-item__content
+		padding 15px
+	.service-item__price
+		font-size 16px
 
+	//fire
+	.engineering-item
+		width 100%
+	.engineering-item__content
+		padding 15px
+		.btn
+			width 100%
+			font-size 14px
+		
+	.documents-item__img
+		width 50%
+	.documents-item__img_rotate
+		width 32%
+		left 35%
+	.documents-item__text
+		margin 15px 0
 
+	//security
+	.smartphone-control-item__img
+		width 100%
+	.smartphone-control-item__img
+		&:before
+			transform translate(-44%, -30%)
+	.smartphone-control-item__link
+		a
+			margin 0
 
+	.cable-networks-page
+		.h1
+			font-size 20px
+		.js-slide__content
+			padding 15px
+	.cable-networks__list-item
+		.section-form__title
+			min-width auto
+			font-size 14px
+
+	.video-home-page
+		.request-item__img
+			height 300px
+
+	.sets-item
+		padding 15px
+
+	.stages-item__title
+		margin 15px 0
+	.completed-popup__slide
+		height 160px
+		img 
+			height auto
 
 
 

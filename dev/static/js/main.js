@@ -131,7 +131,7 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 426,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
         }
@@ -249,6 +249,9 @@ $(document).ready(function(){
       }
       if ($(window).width() <= '1024'){
         $(this).closest('.security-items').css({'height':'650px'});
+      }
+      if ($(window).width() <= '768'){
+        $(this).closest('.security-items').css({'height':'auto'});
       }
     });
   }
