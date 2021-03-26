@@ -131,7 +131,7 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 769,
+        breakpoint: 1011,
         settings: {
           slidesToShow: 1,
         }
@@ -250,8 +250,9 @@ $(document).ready(function(){
       if ($(window).width() <= '1024'){
         $(this).closest('.security-items').css({'height':'650px'});
       }
-      if ($(window).width() <= '768'){
+      if ($(window).width() <= '1010'){
         $(this).closest('.security-items').css({'height':'auto'});
+        $(this).closest('.security-item').siblings().children('.security-item__visible').css({'display':'block'});
       }
     });
   }
