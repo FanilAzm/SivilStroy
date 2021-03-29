@@ -5599,7 +5599,7 @@ button {
     display: block;
   }
   .new-select {
-    padding: 15px;
+    padding: 17px;
   }
   .new-select:after {
     top: 24px;
@@ -5822,6 +5822,9 @@ button {
     width: 50%;
     padding: 25px;
   }
+  .video-home-page .section-form__info {
+    margin-top: 0;
+  }
   .video-home-page .request-item {
     width: 50%;
   }
@@ -5904,13 +5907,7 @@ button {
     margin-left: 0;
   }
   .solutions-popup .solutions-item__img {
-    height: 600px;
-    overflow: hidden;
-  }
-  .solutions-popup .solutions-item__img img {
-    width: 100%;
-    height: auto;
-    transform: translateY(-80px);
+    height: 400px;
   }
   .completed-popup .popup__content {
     width: 60%;
@@ -5928,7 +5925,7 @@ button {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .sets-item__info-wrap {
+  .sets-popup .sets-item__info-wrap {
     margin-left: 0;
   }
 }
@@ -5975,6 +5972,7 @@ button {
   .request-item__text {
     bottom: 47px;
     left: 31px;
+    right: 31px;
   }
   .request-form {
     width: 100%;
@@ -6179,6 +6177,9 @@ button {
   }
   .solutions-item__descr {
     margin-bottom: 30px;
+  }
+  .solutions-item__descr:last-child {
+    margin-bottom: 0;
   }
   .completed-slider {
     padding-left: 30px;
@@ -6410,6 +6411,224 @@ button {
     width: 80%;
   }
 }
+@media screen and (max-width: 710px) {
+  .section-descr {
+    width: auto;
+  }
+  .header__content {
+    height: 116px;
+  }
+  .header__action {
+    display: none;
+  }
+  .email-mobile,
+  .phone-mobile {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .header-nav {
+    -ms-flex: 0;
+        flex: 0;
+  }
+  .services-item {
+    height: auto;
+  }
+  .services-item_text {
+    padding: 50px;
+  }
+  .section-form {
+    padding: 30px;
+    padding-bottom: 30px;
+  }
+  .section-form .section-form__box {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .section-form .section-form__box .section-form__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .section-form .section-form__box .section-form__input:nth-child(3) {
+    width: 100%;
+  }
+  .section-form .btn {
+    width: 100%;
+  }
+  .section-form .section-form__box {
+    width: 100%;
+  }
+  .section-form__wrap {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .section-form__descr {
+    width: auto;
+    margin: 15px 0 30px;
+  }
+  .section-form__img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-order: 1;
+        order: 1;
+    margin-bottom: 30px;
+  }
+  .section-form__img_tablet {
+    display: none;
+  }
+  .section-form__img_mobile {
+    display: block;
+  }
+  .solutions-item {
+    width: 100%;
+  }
+  .stages-item {
+    width: 45%;
+  }
+  .smartphone-control-item__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .smartphone-control-item__img:before {
+    left: 50%;
+    transform: translate(-44%, -30%);
+    background-image: url("../../static/img/content/video/smartphone-logo-mob.png");
+  }
+  .smartphone-control-item__img img {
+    width: 80%;
+  }
+  .cable-networks-page .h1 {
+    font-size: 38px;
+  }
+  .cable-networks__list {
+    width: auto;
+  }
+  .cable-networks__list-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cable-networks__list-item .section-form__title {
+    margin-bottom: 0;
+  }
+  .cable-networks__action {
+    width: 100%;
+  }
+  .cable-networks__titles p:first-child {
+    min-width: auto;
+  }
+  .cable-networks__titles p:nth-last-child(-n+2) {
+    display: none;
+  }
+  .cable-networks__list-item-btn {
+    margin: 15px 0;
+  }
+  .cable-networks__endprice .h4 {
+    font-size: 20px;
+  }
+  .projects-page .js-slide__content {
+    padding: 40px;
+  }
+  .projects-info {
+    width: 45%;
+  }
+  .project-item__img {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .project-item__img-wrap {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 0;
+    margin-top: 15px;
+  }
+  .project-item__img-wrap img {
+    width: 48%;
+  }
+  .footer-info .contact-email {
+    display: none;
+  }
+  .footer-contact {
+    display: none;
+  }
+  .footer-block {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .footer-content__tablet {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-order: 1;
+        order: 1;
+    margin-bottom: 30px;
+  }
+  .footer-content__tablet .footer-block {
+    width: auto;
+  }
+  .solutions-popup .solutions-item__img img {
+    width: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .select {
+    font-size: 14px;
+  }
+  .new-select {
+    padding: 19px;
+  }
+  .digit-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .digit-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .licenses-action__content {
+    bottom: 34px;
+  }
+  .service-item {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .service-item__img {
+    width: 100%;
+  }
+  .service-item__content {
+    width: 100%;
+  }
+  .service-item__descr {
+    margin: 0;
+  }
+  .stages-items {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .stages-item {
+    width: 70%;
+  }
+  .cable-networks-page .h1 {
+    font-size: 32px;
+  }
+  .video-home-page .completed-item {
+    width: 80%;
+  }
+  .projects-page .js-slide__content {
+    padding: 30px;
+    margin-top: 30px;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .projects-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .projects-info:last-child {
+    margin-bottom: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .hide-mobile {
     display: none;
@@ -6435,24 +6654,6 @@ button {
   }
   .btn-mobile {
     display: block;
-  }
-  .header__content {
-    height: 116px;
-  }
-  .header__action {
-    display: none;
-  }
-  .email-mobile,
-  .phone-mobile {
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .logo img {
-    width: 100px;
-  }
-  .header-nav {
-    -ms-flex: 0;
-        flex: 0;
   }
   .js-slide__text p {
     width: auto;
@@ -6481,6 +6682,9 @@ button {
   .head-form .btn-mobile {
     display: block;
   }
+  .head-form .section-form__info {
+    margin-top: 30px;
+  }
   .section-form__box {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -6499,13 +6703,10 @@ button {
     color: #1a98a6;
   }
   .section-form__info {
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .section-form__info .section-form__box {
     margin-bottom: 30px;
-  }
-  .section-form .section-form__box {
-    width: 100%;
   }
   .advantages-item {
     width: 100%;
@@ -6547,51 +6748,8 @@ button {
   .services-item__descr {
     margin: 15px 0;
   }
-  .digit-item {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .digit-item:nth-child(-n+2) {
-    margin-bottom: 30px;
-  }
   .section-form {
     padding: 15px;
-    padding-bottom: 30px;
-  }
-  .section-form .section-form__box {
-    -ms-flex-order: 2;
-        order: 2;
-  }
-  .section-form .section-form__box .section-form__input {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .section-form .section-form__box .section-form__input:nth-child(3) {
-    width: 100%;
-  }
-  .section-form .btn {
-    width: 100%;
-  }
-  .section-form__wrap {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .section-form__descr {
-    width: auto;
-    margin: 15px 0 30px;
-  }
-  .section-form__img {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-order: 1;
-        order: 1;
-    margin-bottom: 30px;
-  }
-  .section-form__img_tablet {
-    display: none;
-  }
-  .section-form__img_mobile {
-    display: block;
   }
   .checkbox {
     padding-left: 45px;
@@ -6642,7 +6800,6 @@ button {
     margin: 15px 0 30px;
   }
   .licenses-action {
-    width: 93%;
     height: auto;
   }
   .licenses-action__content {
@@ -6680,9 +6837,6 @@ button {
   .request-form .section-form__box {
     margin-bottom: 15px;
   }
-  .request-form .new-select {
-    padding: 5px 20px;
-  }
   .request-form .new-select__list {
     top: 57px;
   }
@@ -6691,23 +6845,6 @@ button {
   }
   .footer-content {
     padding: 30px 0;
-  }
-  .footer-content__tablet {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-order: 1;
-        order: 1;
-    margin-bottom: 30px;
-  }
-  .footer-content__tablet .footer-block {
-    width: auto;
-  }
-  .footer-contact {
-    display: none;
-  }
-  .footer-block {
-    -ms-flex-direction: column;
-        flex-direction: column;
   }
   .footer-menu li {
     margin-bottom: 15px;
@@ -6751,21 +6888,11 @@ button {
     -ms-flex-align: center;
         align-items: center;
   }
-  .service-item {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .service-item__img {
+  .stages-item {
     width: 100%;
   }
   .service-item__content {
-    width: 100%;
-  }
-  .service-item__descr {
-    margin: 0;
-  }
-  .stages-item {
-    width: 100%;
+    padding: 15px;
   }
   .engineering-item__content {
     padding: 30px;
@@ -6802,14 +6929,10 @@ button {
     color: rgba(0,0,0,0.5);
   }
   .smartphone-control-item__img {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 90%;
   }
-  .smartphone-control-item__img:before {
-    left: 50%;
-    transform: translate(-44%, -30%);
-    background-image: url("../../static/img/content/video/smartphone-logo-mob.png");
+  .smartphone-control-item__img img {
+    width: 90%;
   }
   .smartphone-control-item__link {
     width: auto;
@@ -6819,31 +6942,6 @@ button {
   }
   .cable-networks-page .h1 {
     font-size: 26px;
-  }
-  .cable-networks__list {
-    width: auto;
-  }
-  .cable-networks__list-item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .cable-networks__list-item .section-form__title {
-    margin-bottom: 0;
-  }
-  .cable-networks__action {
-    width: 100%;
-  }
-  .cable-networks__titles p:first-child {
-    min-width: auto;
-  }
-  .cable-networks__titles p:nth-last-child(-n+2) {
-    display: none;
-  }
-  .cable-networks__list-item-btn {
-    margin: 15px 0;
-  }
-  .cable-networks__endprice .h4 {
-    font-size: 20px;
   }
   .video-home-page .js-slide__btn {
     -ms-flex-direction: column;
@@ -6865,6 +6963,9 @@ button {
   .video-home-page .request-form .new-select {
     padding: 20px;
   }
+  .video-home-page .request-form .section-form__info {
+    margin-top: 15px;
+  }
   .video-home-page .request-form .section-form__input {
     margin-bottom: 30px;
   }
@@ -6881,6 +6982,9 @@ button {
   .video-home-page .completed-item {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .video-home-page .completed-item__block {
+    height: auto;
   }
   .sets-item__block {
     -ms-flex-direction: column;
@@ -6926,30 +7030,6 @@ button {
   .projects-page .h1 {
     font-size: 36px;
   }
-  .projects-page .js-slide__content {
-    padding: 30px;
-    margin-top: 30px;
-    -ms-flex-pack: center;
-        justify-content: center;
-  }
-  .projects-info {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .projects-info:last-child {
-    margin-bottom: 0;
-  }
-  .project-item__img {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-bottom: 30px;
-  }
-  .project-item__img-wrap {
-    -ms-flex-direction: row;
-        flex-direction: row;
-    margin: 0;
-    margin-top: 15px;
-  }
   .project-item__img-wrap img {
     width: 47.5%;
   }
@@ -6994,6 +7074,24 @@ button {
   }
   .sets-popup .sets-item__action {
     margin: 15px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .request-form .new-select {
+    padding: 8px 15px;
+  }
+  .engineering-item {
+    width: 100%;
+  }
+  .engineering-item__content {
+    padding: 15px;
+  }
+  .engineering-item__content .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .cable-networks-page .h1 {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -7063,6 +7161,9 @@ button {
   }
   .head-block__content {
     padding-top: 177px;
+  }
+  .js-slide__content_white {
+    padding: 15px;
   }
   .js-slider {
     width: 250px;
@@ -7231,21 +7332,14 @@ button {
   .service-item__price {
     font-size: 16px;
   }
-  .engineering-item {
-    width: 100%;
-  }
-  .engineering-item__content {
-    padding: 15px;
-  }
-  .engineering-item__content .btn {
-    width: 100%;
-    font-size: 14px;
-  }
   .smartphone-control-item__img {
     width: 100%;
   }
   .smartphone-control-item__img:before {
     transform: translate(-44%, -30%);
+  }
+  .smartphone-control-item__img img {
+    width: 100%;
   }
   .smartphone-control-item__link a {
     margin: 0;
