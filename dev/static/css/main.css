@@ -3647,7 +3647,7 @@ button {
 .header-nav__tablet .header-nav__submenu a:before {
   content: none;
   position: absolute;
-  bottom: -20px;
+  bottom: -16px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -5930,6 +5930,30 @@ button {
   }
 }
 @media screen and (max-width: 1010px) {
+  .head-block {
+    background-image: url("../../static/img/content/video-tablet-bg.png");
+  }
+  .control-page .head-block {
+    background-image: url("../../static/img/content/control-tablet-bg.png");
+  }
+  .fire-page .head-block {
+    background-image: url("../../static/img/content/fire-tablet-bg.png");
+  }
+  .security-page .head-block {
+    background-image: url("../../static/img/content/security-tablet-bg.png");
+  }
+  .cable-networks-page .head-block {
+    background-image: url("../../static/img/content/cable-tablet-bg.png");
+  }
+  .video-home-page .head-block {
+    background-image: url("../../static/img/content/video-home-tablet-bg.png");
+  }
+  .security-home-page .head-block {
+    background-image: url("../../static/img/content/security-home-tablet-bg.png");
+  }
+  .projects-page .head-block {
+    background-image: url("../../static/img/content/projects-tablet-bg.png");
+  }
   .head-block__content {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -6668,6 +6692,30 @@ button {
   }
   .slick-dots li.slick-active {
     height: 5px;
+  }
+  .head-block {
+    background-image: url("../../static/img/content/video-mobile-bg.png");
+  }
+  .control-page .head-block {
+    background-image: url("../../static/img/content/control-mobile-bg.png");
+  }
+  .fire-page .head-block {
+    background-image: url("../../static/img/content/fire-mobile-bg.png");
+  }
+  .security-page .head-block {
+    background-image: url("../../static/img/content/security-mobile-bg.png");
+  }
+  .cable-networks-page .head-block {
+    background-image: url("../../static/img/content/cable-mobile-bg.png");
+  }
+  .video-home-page .head-block {
+    background-image: url("../../static/img/content/video-home-mobile-bg.png");
+  }
+  .security-home-page .head-block {
+    background-image: url("../../static/img/content/security-home-mobile-bg.png");
+  }
+  .projects-page .head-block {
+    background-image: url("../../static/img/content/projects-mobile-bg.png");
   }
   .head-block__content {
     padding-top: 159px;
