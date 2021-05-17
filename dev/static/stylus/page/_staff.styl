@@ -11,6 +11,7 @@
 
 .staff-items__block
 	display flex
+	flex-wrap wrap
 	justify-content space-between
 	margin-bottom 60px
 	&:last-child
@@ -39,3 +40,39 @@
 	margin 20px 0
 	color actionColor
 	
+
+@media screen and (max-width 1240px)
+	.staff-items__block
+		.staff-item
+			&:last-child
+				margin-bottom 0
+	.staff-item
+		width 45%
+		margin-bottom 60px
+
+@media screen and (max-width 768px)
+	.staff-items__block
+		justify-content center
+	.staff-item
+		width 100%
+
+@media screen and (max-width 710px)
+	.staff-page .head-block__content
+		padding-top 116px
+
+@media screen and (max-width 480px)
+	.section-items
+		padding 30px
+	.staff-item
+		font-size 14px
+	.staff-item__img
+		img
+			width 80%
+
+@media screen and (max-width 375px)
+	.staff-item__img
+		height 65%
+
+@media screen and (max-width 320px)
+	.staff-item__img
+		height 55%

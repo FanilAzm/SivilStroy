@@ -162,7 +162,21 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     nextArrow: '.other-news-slider__next',
-    prevArrow: '.other-news-slider__prev'
+    prevArrow: '.other-news-slider__prev',
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ],
   });
 
   // Слайдер в попап
